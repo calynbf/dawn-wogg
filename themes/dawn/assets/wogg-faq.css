@@ -70,32 +70,33 @@
   content: none;
 }
 
-.wogg-faq-classic__item summary i {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  flex: 0 0 2rem;
+.wogg-faq-classic__icon {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 2.4rem;
+  color: #000;
 }
 
-.wogg-faq-classic__item summary i::before,
-.wogg-faq-classic__item summary i::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1.9rem;
-  height: 0.1rem;
-  background: #000;
-  transform: translate(-50%, -50%);
+.wogg-faq-classic__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-linecap: square;
 }
 
-.wogg-faq-classic__item summary i::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-  transition: transform 180ms ease;
+.wogg-faq-classic__icon-vertical {
+  transform-origin: center;
+  transition: opacity 160ms ease, transform 160ms ease;
 }
 
-.wogg-faq-classic__item[open] summary i::after {
-  transform: translate(-50%, -50%) rotate(0);
+.wogg-faq-classic__item[open] .wogg-faq-classic__icon-vertical {
+  opacity: 0;
+  transform: rotate(90deg);
 }
 
 .wogg-faq-classic__answer {
@@ -130,6 +131,12 @@
     gap: 1.4rem;
     padding: 2rem 0;
     font-size: 1.7rem;
+  }
+
+  .wogg-faq-classic__icon {
+    width: 2rem;
+    height: 2rem;
+    flex-basis: 2rem;
   }
 
   .wogg-faq-classic__answer {
