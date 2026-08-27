@@ -1,14 +1,23 @@
-{{ 'wogg-home.css' | asset_url | stylesheet_tag }}
-<section class="wogg-section wogg-hero" aria-labelledby="WoggHeroHeading-{{ section.id }}">
-  <div class="wogg-hero__media">{% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 2400 | image_tag: widths: '750,1100,1500,2000,2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high' }}{% else %}{{ 'lifestyle-1' | placeholder_svg_tag: 'wogg-hero__placeholder' }}{% endif %}</div>
-  <div class="wogg-hero__overlay" style="--overlay-opacity:{{ section.settings.overlay_opacity | divided_by: 100.0 }}"></div>
-  <div class="wogg-hero__inner page-width"><div class="wogg-hero__content">
-    {% if section.settings.eyebrow != blank %}<p class="wogg-hero__eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
-    <h1 id="WoggHeroHeading-{{ section.id }}" class="wogg-display wogg-hero__heading">{{ section.settings.heading | escape }}</h1>
-    {% if section.settings.text != blank %}<div class="wogg-hero__text rte">{{ section.settings.text }}</div>{% endif %}
-    <div class="wogg-hero__actions">{% if section.settings.primary_label != blank %}<a class="wogg-button" href="{{ section.settings.primary_link | default: routes.all_products_collection_url }}">{{ section.settings.primary_label | escape }}</a>{% endif %}{% if section.settings.secondary_label != blank %}<a class="wogg-button wogg-button--outline" href="{{ section.settings.secondary_link | default: '#' }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}</div>
-  </div></div>
+{{ 'wogg-hero-real.css' | asset_url | stylesheet_tag }}
+<style>@font-face{font-family:'WOGG Open Sans Condensed';src:url('{{ 'wogg-open-sans-condensed-bold.ttf' | asset_url }}') format('truetype');font-weight:700;font-style:normal;font-display:swap}</style>
+<section class="wogg-real-hero page-width" aria-labelledby="WoggHeroHeading-{{ section.id }}">
+  <div class="wogg-real-hero__content">
+    <div class="wogg-real-hero__rating"><span class="wogg-real-hero__stars" aria-label="5 estrellas">★★★★★</span><span>{{ section.settings.social_proof | escape }}</span></div>
+    <h1 id="WoggHeroHeading-{{ section.id }}" class="wogg-real-hero__heading">
+      {{ section.settings.heading_prefix | escape }} <span class="wogg-real-hero__highlight">{{ section.settings.heading_highlight | escape }}</span><br>
+      {{ section.settings.second_prefix | escape }} <span class="wogg-real-hero__highlight">{{ section.settings.dogs_label | escape }}</span> {{ section.settings.connector | escape }} <span class="wogg-real-hero__highlight">{{ section.settings.cats_label | escape }}</span>
+      <span class="wogg-real-hero__pets" aria-hidden="true"><img class="wogg-real-hero__pet" src="{{ 'wogg-dog.png' | asset_url }}" width="160" height="145" alt=""><img class="wogg-real-hero__pet" src="{{ 'wogg-cat.png' | asset_url }}" width="256" height="256" alt=""></span>
+    </h1>
+    {% if section.settings.text != blank %}<div class="wogg-real-hero__text rte">{{ section.settings.text }}</div>{% endif %}
+    <div class="wogg-real-hero__actions">
+      {% if section.settings.primary_label != blank %}<a class="wogg-real-hero__button" href="{{ section.settings.primary_link | default: routes.all_products_collection_url }}">{{ section.settings.primary_label | escape }}</a>{% endif %}
+      {% if section.settings.secondary_label != blank %}<a class="wogg-real-hero__secondary" href="{{ section.settings.secondary_link | default: '#' }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
+    </div>
+  </div>
+  <div class="wogg-real-hero__media">
+    {% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1400 | image_tag: widths: '550,750,1000,1400', sizes: '(min-width:750px) 50vw,100vw', loading: 'eager', fetchpriority: 'high' }}{% else %}<img src="{{ 'wogg-hero-products.png' | asset_url }}" width="637" height="453" alt="Perros esperando su alimento WOGG" fetchpriority="high">{% endif %}
+  </div>
 </section>
 {% schema %}
-{"name":"WOGG - Portada principal","tag":"section","class":"section","settings":[{"type":"image_picker","id":"image","label":"Imagen principal"},{"type":"range","id":"overlay_opacity","min":0,"max":90,"step":5,"unit":"%","label":"Oscurecer imagen","default":55},{"type":"text","id":"eyebrow","label":"Etiqueta","default":"10.000+ peludos felices"},{"type":"text","id":"heading","label":"Título","default":"Alimento natural para perros y gatos"},{"type":"richtext","id":"text","label":"Descripción","default":"<p>Mejorá su salud con una dieta natural equilibrada, formulada por profesionales en nutrición animal.</p>"},{"type":"text","id":"primary_label","label":"Botón principal","default":"Comprar ahora"},{"type":"url","id":"primary_link","label":"Enlace principal"},{"type":"text","id":"secondary_label","label":"Botón secundario","default":"Calcular ración"},{"type":"url","id":"secondary_link","label":"Enlace secundario"}],"presets":[{"name":"WOGG - Portada principal"}]}
+{"name":"WOGG - Portada real","tag":"section","class":"section","settings":[{"type":"image_picker","id":"image","label":"Imagen principal"},{"type":"text","id":"social_proof","label":"Prueba social","default":"10.000+ Peludos Felices"},{"type":"text","id":"heading_prefix","label":"Inicio del título","default":"Alimento"},{"type":"text","id":"heading_highlight","label":"Palabra destacada","default":"natural."},{"type":"text","id":"second_prefix","label":"Segunda línea","default":"Para"},{"type":"text","id":"dogs_label","label":"Perros","default":"perros"},{"type":"text","id":"connector","label":"Conector","default":"y"},{"type":"text","id":"cats_label","label":"Gatos","default":"gatos"},{"type":"richtext","id":"text","label":"Descripción","default":"<p>Mejorá la salud de tu mascota con una dieta natural equilibrada. Formulado por profesionales en nutrición animal.</p>"},{"type":"text","id":"primary_label","label":"Botón principal","default":"Comprar ahora"},{"type":"url","id":"primary_link","label":"Enlace principal"},{"type":"text","id":"secondary_label","label":"Enlace secundario"},{"type":"url","id":"secondary_link","label":"URL secundaria"}],"presets":[{"name":"WOGG - Portada real"}]}
 {% endschema %}
