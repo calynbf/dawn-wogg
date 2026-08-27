@@ -37,30 +37,35 @@
         "benefit_1": {
           "type": "benefit",
           "settings": {
+            "icon_svg": "",
             "text": "Aprobado por veterinarios"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
+            "icon_svg": "",
             "text": "Sin harinas"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
+            "icon_svg": "",
             "text": "Alimento congelado BARF"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
+            "icon_svg": "",
             "text": "Ingredientes naturales"
           }
         },
         "benefit_5": {
           "type": "benefit",
           "settings": {
+            "icon_svg": "",
             "text": "Sin conservantes"
           }
         }
@@ -114,43 +119,57 @@
         "padding_bottom": 64
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Los favoritos de la familia",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
     "value_grid": {
       "type": "wogg-value-grid",
       "blocks": {
-        "value_1": { "type": "benefit", "settings": { "heading": "Peso Corporal Ideal" } },
-        "value_2": { "type": "benefit", "settings": { "heading": "Pelaje Más Sano y Brillante" } },
-        "value_3": { "type": "benefit", "settings": { "heading": "Más Energía" } },
-        "value_4": { "type": "benefit", "settings": { "heading": "Mejores Digestiones" } },
-        "value_5": { "type": "benefit", "settings": { "heading": "Reducción de Alergias" } },
-        "value_6": { "type": "benefit", "settings": { "heading": "Mejor Salud Dental" } }
+        "value_1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Peso Corporal Ideal",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        },
+        "value_2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Pelaje Más Sano y Brillante",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        },
+        "value_3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Más Energía",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        },
+        "value_4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Mejores Digestiones",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        },
+        "value_5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Reducción de Alergias",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        },
+        "value_6": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚡",
+            "heading": "Mejor Salud Dental",
+            "text": "Vitalidad para disfrutar cada día."
+          }
+        }
       },
       "block_order": [
         "value_1",
@@ -161,8 +180,9 @@
         "value_6"
       ],
       "settings": {
+        "kicker": "Alimentación con propósito",
         "heading": "La forma en que tus peludos deberían comer.",
-        "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br>Experimentá resultados positivos en tan solo unas semanas.</p>",
+        "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br/>Experimentá resultados positivos en tan solo unas semanas.</p>",
         "color_scheme": "",
         "full_width": false,
         "use_background": false,
@@ -487,7 +507,6 @@
     "wogg_hero",
     "wogg_benefits",
     "wogg_pets",
-    "featured_collection",
     "value_grid",
     "ingredients",
     "comparison",
