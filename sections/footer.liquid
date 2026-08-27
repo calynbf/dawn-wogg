@@ -50,7 +50,7 @@
         {%- assign menu_blocks = section.blocks | where: 'type', 'link_list' -%}
         {%- if menu_blocks.size > 0 -%}
           {%- for block in menu_blocks limit: 3 -%}
-            <details class="wogg-footer__menu" {% if forloop.first %}open{% endif %} {{ block.shopify_attributes }}>
+            <details class="wogg-footer__menu" open {{ block.shopify_attributes }}>
               <summary>{{ block.settings.heading }}<span aria-hidden="true">+</span></summary>
               {%- if block.settings.menu != blank -%}
                 <ul class="list-unstyled">{%- for link in block.settings.menu.links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
@@ -59,19 +59,36 @@
           {%- endfor -%}
         {%- else -%}
           <details class="wogg-footer__menu" open><summary>Tienda<span aria-hidden="true">+</span></summary><ul class="list-unstyled"><li><a href="{{ routes.root_url }}">Inicio</a></li><li><a href="/pages/sobre-nosotros">Sobre Nosotros</a></li><li><a href="/products/perros">Perros</a></li><li><a href="/collections/gatos">Gatos</a></li></ul></details>
-          <details class="wogg-footer__menu"><summary>Aprendé<span aria-hidden="true">+</span></summary><ul class="list-unstyled"><li><a href="/pages/sobre-nosotros">Nuestra Historia</a></li><li><a href="/#preguntas-frecuentes">Preguntas Frecuentes</a></li><li><a href="/blogs/news">Blog</a></li></ul></details>
-          <details class="wogg-footer__menu"><summary>Ayuda<span aria-hidden="true">+</span></summary><ul class="list-unstyled"><li><a href="/pages/contact">Contacto</a></li><li><a href="/pages/zonas-de-envio">Zonas de Envío</a></li><li><a href="/pages/encontranos">Encontranos</a></li><li><a href="/pages/mayoristas">Mayoristas</a></li></ul></details>
+          <details class="wogg-footer__menu" open><summary>Aprendé<span aria-hidden="true">+</span></summary><ul class="list-unstyled"><li><a href="/pages/sobre-nosotros">Nuestra Historia</a></li><li><a href="/#preguntas-frecuentes">Preguntas Frecuentes</a></li><li><a href="/blogs/news">Blog</a></li></ul></details>
+          <details class="wogg-footer__menu" open><summary>Ayuda<span aria-hidden="true">+</span></summary><ul class="list-unstyled"><li><a href="/pages/contact">Contacto</a></li><li><a href="/pages/zonas-de-envio">Zonas de Envío</a></li><li><a href="/pages/encontranos">Encontranos</a></li><li><a href="/pages/mayoristas">Mayoristas</a></li></ul></details>
         {%- endif -%}
       </div>
 
       <div class="wogg-footer__brand">
         <a class="wogg-footer__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">WOGG</a>
-        {%- if section.settings.show_social -%}{%- render 'social-icons', class: 'wogg-footer__social' -%}{%- endif -%}
+        {%- if section.settings.show_social -%}
+          <ul class="wogg-footer__social list-unstyled" role="list">
+            <li><a href="https://www.facebook.com/people/Woggbarf/100094319726579/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3.3l.7-4h-4V9c0-.7.3-1 1-1Z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/wogg.ok/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="wogg-footer__social-dot"/></svg></a></li>
+            <li><a href="https://www.tiktok.com/@wogg.ok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.2a4.2 4.2 0 1 1-3.2-4.1v3.2a1.5 1.5 0 1 0 .2 1V3h3c.4 2.2 1.7 3.5 4 4v3c-1.5-.2-2.8-.8-4-1.7"/></svg></a></li>
+          </ul>
+        {%- endif -%}
         <p><span aria-hidden="true">®</span> Marca registrada</p>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  (() => {
+    const footer = document.currentScript.previousElementSibling;
+    const menus = footer.querySelectorAll('.wogg-footer__menu');
+    const media = window.matchMedia('(min-width: 750px)');
+    const updateMenus = () => menus.forEach((menu, index) => { menu.open = media.matches || index === 0; });
+    updateMenus();
+    media.addEventListener('change', updateMenus);
+  })();
+</script>
 
 {% if false %}
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
