@@ -102,7 +102,7 @@
     },
     "purpose": {
       "type": "wogg-purpose",
-      "settings": { "kicker": "Garantía de plato limpio", "heading": "Lo van a amar", "text": "<p>Si no les gusta, te ofrecemos un reembolso de hasta 5 kg. Además, con cada compra ayudás a salvar vidas y acompañar refugios.</p>", "button_label": "Quiero probar", "button_link": "shopify://collections/all" }
+      "settings": { "heading": "¡Lo van a amar!", "text": "<p>Y con nuestra garantía de plato limpio, si no les gusta, te ofrecemos un reembolso (hasta 5 kg).</p><p><strong>Con cada compra ayudás a salvar vidas 🐶🐱🐾</strong><br>Nuestro propósito es mejorar la calidad de vida y fomentar la adopción y la colaboración con refugios. Una razón más para probar WOGG.</p>", "button_label": "¡Quiero probar!", "button_link": "shopify://collections/all" }
     },
     "steps": {
       "type": "wogg-steps",
@@ -151,5 +151,5 @@
       "settings": { "color_scheme": "scheme-2", "full_width": true, "padding_top": 68, "padding_bottom": 68 }
     }
   },
-  "order": ["wogg_hero", "wogg_benefits", "wogg_pets", "featured_collection", "value_grid", "ingredients", "comparison", "purpose", "steps", "community", "location", "faq", "newsletter"]
+  "order": ["wogg_hero", "wogg_benefits", "wogg_pets", "featured_collection", "value_grid", "ingredients", "purpose", "steps", "community", "location", "faq", "newsletter"]
 }
