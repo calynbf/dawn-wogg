@@ -193,6 +193,13 @@
     "ingredients": {
       "type": "wogg-ingredients",
       "blocks": {
+        "ingredient_jN3XHG": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Carne vacuna",
+            "text": "Proteína de alta calidad."
+          }
+        },
         "ingredient_1": {
           "type": "ingredient",
           "settings": {
@@ -223,6 +230,7 @@
         }
       },
       "block_order": [
+        "ingredient_jN3XHG",
         "ingredient_1",
         "ingredient_2",
         "ingredient_3",
@@ -232,7 +240,7 @@
         "kicker": "Ingredientes reales",
         "heading": "¿De qué estamos hechos?",
         "text": "<p>Proteínas, vegetales y semillas seleccionadas para una nutrición completa.</p>",
-        "button_label": "Conocé todos los ingredientes",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "full_width": false,
