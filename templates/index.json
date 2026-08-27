@@ -117,12 +117,15 @@
     "community": {
       "type": "wogg-community",
       "blocks": {
-        "quote_1": { "type": "testimonial", "settings": { "quote": "El cambio se notó en su energía, digestión y entusiasmo a la hora de comer.", "author": "Familia de Rocco" } },
-        "quote_2": { "type": "testimonial", "settings": { "quote": "Ingredientes reales y la tranquilidad de saber qué está comiendo.", "author": "Familia de Mora" } },
-        "quote_3": { "type": "testimonial", "settings": { "quote": "Nos resultó simple empezar y ahora no deja nada en el plato.", "author": "Familia de Olivia" } }
+        "quote_1": { "type": "testimonial", "settings": {} },
+        "quote_2": { "type": "testimonial", "settings": {} },
+        "quote_3": { "type": "testimonial", "settings": {} },
+        "quote_4": { "type": "testimonial", "settings": {} },
+        "quote_5": { "type": "testimonial", "settings": {} },
+        "quote_6": { "type": "testimonial", "settings": {} }
       },
-      "block_order": ["quote_1", "quote_2", "quote_3"],
-      "settings": { "kicker": "Familia WOGG", "heading": "Peludos felices, familias felices", "text": "<p>Experiencias reales de quienes eligieron una alimentación más natural.</p>" }
+      "block_order": ["quote_1", "quote_2", "quote_3", "quote_4", "quote_5", "quote_6"],
+      "settings": { "heading": "Unite a nuestra familia" }
     },
     "location": {
       "type": "wogg-location",
