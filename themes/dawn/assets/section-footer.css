@@ -56,7 +56,7 @@
 
 .wogg-footer__form button span { margin-left: 0.5rem; font-size: 2.2rem; }
 .wogg-footer__message { position: absolute; top: calc(100% + .8rem); left: 2rem; }
-.wogg-footer__divider { margin: 8rem 0 7.5rem; border-top: 0.1rem solid rgba(0, 0, 0, .55); }
+.wogg-footer__divider { display: block !important; margin: 8rem 0 7.5rem; border-top: 0.1rem solid rgba(0, 0, 0, .55); }
 .wogg-footer__main { display: grid; grid-template-columns: minmax(0, 3fr) minmax(18rem, 1fr); gap: 8rem; }
 .wogg-footer__menus { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6rem; }
 .wogg-footer__menu summary { color: #000; cursor: default; font-size: 2.6rem; line-height: 1.2; list-style: none; }
@@ -67,8 +67,11 @@
 .wogg-footer__menu a:hover { text-decoration: underline; text-underline-offset: .3rem; }
 .wogg-footer__brand { display: flex; flex-direction: column; align-items: center; }
 .wogg-footer__logo { color: #000; font-family: Arial, sans-serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -.16rem; line-height: 1; text-decoration: none; }
-.wogg-footer__brand .list-social { justify-content: center; margin: 2.5rem 0 1.5rem; gap: 1rem; }
-.wogg-footer__brand .list-social__link { width: 3.6rem; height: 3.6rem; padding: .9rem; border-radius: 50%; background: #fff200; color: #000; }
+.wogg-footer__social { display: flex; justify-content: center; margin: 2.5rem 0 1.5rem; padding: 0; gap: 1rem; }
+.wogg-footer__social a { display: grid; width: 3.6rem; height: 3.6rem; place-items: center; border-radius: 50%; background: #fff200; color: #000; }
+.wogg-footer__social svg { width: 2rem; height: 2rem; fill: currentColor; stroke: currentColor; stroke-width: 1.8; }
+.wogg-footer__social rect, .wogg-footer__social circle { fill: none; }
+.wogg-footer__social .wogg-footer__social-dot { fill: currentColor; stroke: none; }
 .wogg-footer__brand p { margin: 0; font-size: 1.5rem; }
 .wogg-footer__brand p span { margin-right: .7rem; }
 
