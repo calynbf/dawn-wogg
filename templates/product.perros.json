@@ -3,6 +3,7 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "eyebrow": { "type": "text", "settings": { "text": "MENÚ WOGG PARA PERROS", "text_style": "uppercase" } },
         "rating": { "type": "rating", "settings": {} },
         "title": { "type": "title", "settings": {} },
         "intro": { "type": "text", "settings": { "text": "Alimento completo, congelado y formulado por profesionales en nutrición animal.", "text_style": "body" } },
@@ -11,12 +12,13 @@
         "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
         "quantity": { "type": "quantity_selector", "settings": {} },
         "buy": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false } },
+        "purchase_benefits": { "type": "custom_liquid", "settings": { "custom_liquid": "<div class='wogg-purchase-benefits'><span>🚚 Envíos programados</span><span>❄️ Llega congelado</span><span>🐾 Tu compra ayuda</span></div>" } },
         "ingredients": { "type": "collapsible_tab", "settings": { "heading": "Ingredientes", "icon": "carrot", "content": "<p>45% huesos carnosos de pollo, 35% carne de vaca y/o pollo, 10% vísceras, 10% vegetales y suplementos naturales.</p>" } },
         "portion": { "type": "collapsible_tab", "settings": { "heading": "Tabla de consumo", "icon": "clipboard", "content": "<p>Un perro adulto consume aproximadamente entre 2% y 3% de su peso ideal por día. El resultado es orientativo; utilizá la calculadora para una recomendación personalizada.</p>" } },
         "nutrition": { "type": "collapsible_tab", "settings": { "heading": "Información nutricional", "icon": "leaf", "content": "<p>Valor energético: 148 kcal/100 g. Humedad 71,5 g; proteína 15,9 g; grasa 8,6 g; carbohidratos 1,7 g; cenizas 2,3 g.</p>" } },
         "shipping": { "type": "collapsible_tab", "settings": { "heading": "Envío y conservación", "icon": "snowflake", "content": "<p>Conservar en freezer. Descongelar la ración del día en heladera durante 24 horas. Las fechas disponibles se seleccionan durante el checkout.</p>" } }
       },
-      "block_order": ["rating", "title", "intro", "features", "price", "variant_picker", "quantity", "buy", "ingredients", "portion", "nutrition", "shipping"],
+      "block_order": ["eyebrow", "rating", "title", "intro", "features", "price", "variant_picker", "quantity", "buy", "purchase_benefits", "ingredients", "portion", "nutrition", "shipping"],
       "settings": { "enable_sticky_info": true, "color_scheme": "scheme-2", "media_size": "large", "constrain_to_viewport": true, "media_fit": "contain", "gallery_layout": "thumbnail_slider", "mobile_thumbnails": "show", "media_position": "left", "image_zoom": "lightbox", "hide_variants": true, "enable_video_looping": false, "padding_top": 36, "padding_bottom": 40 }
     },
     "benefits": {

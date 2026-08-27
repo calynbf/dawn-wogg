@@ -75,9 +75,18 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <product-component view-event-payload="{{ product | standard_event_data: 'view', context: 'page' | escape }}">
     <div class="page-width">
-      <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+      <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% if template.suffix == 'perros' %} product--wogg-placeholder grid--2-col-tablet{% endif %}{% endif %}">
         <div class="grid__item product__media-wrapper">
-          {% render 'product-media-gallery', variant_images: variant_images %}
+          {% if product.media.size > 0 %}
+            {% render 'product-media-gallery', variant_images: variant_images %}
+          {% elsif template.suffix == 'perros' %}
+            <div class="wogg-product-placeholder" aria-label="Presentación del alimento natural WOGG">
+              {{ 'wogg-hero-products.png' | asset_url | image_tag: loading: 'eager', widths: '550, 750, 1100', sizes: '(min-width: 990px) 58vw, 100vw', alt: 'Alimento natural WOGG para perros' }}
+              <span class="wogg-product-placeholder__badge">100% natural<br>y congelado</span>
+            </div>
+          {% else %}
+            {% render 'product-media-gallery', variant_images: variant_images %}
+          {% endif %}
         </div>
         <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <section
