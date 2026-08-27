@@ -249,6 +249,21 @@
         "padding_bottom": 64
       }
     },
+    "purpose": {
+      "type": "wogg-purpose",
+      "settings": {
+        "kicker": "Garantía de plato limpio",
+        "heading": "Lo van a amar",
+        "text": "<p>Si no les gusta, te ofrecemos un reembolso de hasta 5 kg. Además, con cada compra ayudás a salvar vidas y acompañar refugios.</p>",
+        "button_label": "Quiero probar",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "steps": {
       "type": "wogg-steps",
       "blocks": {
@@ -287,77 +302,6 @@
         "button_link": "",
         "color_scheme": "",
         "full_width": false,
-        "use_background": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "purpose": {
-      "type": "wogg-purpose",
-      "settings": {
-        "kicker": "Garantía de plato limpio",
-        "heading": "Lo van a amar",
-        "text": "<p>Si no les gusta, te ofrecemos un reembolso de hasta 5 kg. Además, con cada compra ayudás a salvar vidas y acompañar refugios.</p>",
-        "button_label": "Quiero probar",
-        "button_link": "shopify://collections/all",
-        "color_scheme": "",
-        "full_width": true,
-        "use_background": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "community": {
-      "type": "wogg-community",
-      "blocks": {
-        "quote_1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "El cambio se notó en su energía, digestión y entusiasmo a la hora de comer.",
-            "author": "Familia de Rocco"
-          }
-        },
-        "quote_2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Ingredientes reales y la tranquilidad de saber qué está comiendo.",
-            "author": "Familia de Mora"
-          }
-        },
-        "quote_3": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Nos resultó simple empezar y ahora no deja nada en el plato.",
-            "author": "Familia de Olivia"
-          }
-        }
-      },
-      "block_order": [
-        "quote_1",
-        "quote_2",
-        "quote_3"
-      ],
-      "settings": {
-        "kicker": "Familia WOGG",
-        "heading": "Peludos felices, familias felices",
-        "text": "<p>Experiencias reales de quienes eligieron una alimentación más natural.</p>",
-        "color_scheme": "",
-        "full_width": false,
-        "use_background": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "location": {
-      "type": "wogg-location",
-      "settings": {
-        "kicker": "Llegamos a tu casa",
-        "heading": "Encontrá WOGG cerca tuyo",
-        "text": "<p>Conocé nuestras zonas de entrega y puntos de venta.</p>",
-        "button_label": "Dónde encontrarnos",
-        "button_link": "",
-        "color_scheme": "",
-        "full_width": true,
         "use_background": false,
         "padding_top": 64,
         "padding_bottom": 64
@@ -422,6 +366,62 @@
         "padding_bottom": 64
       }
     },
+    "community": {
+      "type": "wogg-community",
+      "blocks": {
+        "quote_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "El cambio se notó en su energía, digestión y entusiasmo a la hora de comer.",
+            "author": "Familia de Rocco"
+          }
+        },
+        "quote_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Ingredientes reales y la tranquilidad de saber qué está comiendo.",
+            "author": "Familia de Mora"
+          }
+        },
+        "quote_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Nos resultó simple empezar y ahora no deja nada en el plato.",
+            "author": "Familia de Olivia"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1",
+        "quote_2",
+        "quote_3"
+      ],
+      "settings": {
+        "kicker": "Familia WOGG",
+        "heading": "Peludos felices, familias felices",
+        "text": "<p>Experiencias reales de quienes eligieron una alimentación más natural.</p>",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "location": {
+      "type": "wogg-location",
+      "settings": {
+        "kicker": "Llegamos a tu casa",
+        "heading": "Encontrá WOGG cerca tuyo",
+        "text": "<p>Conocé nuestras zonas de entrega y puntos de venta.</p>",
+        "button_label": "Dónde encontrarnos",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -464,9 +464,9 @@
     "ingredients",
     "purpose",
     "steps",
+    "faq",
     "community",
     "location",
-    "faq",
     "newsletter"
   ]
 }
