@@ -1,9 +1,11 @@
 .wogg-ticker__item {
   gap: 1.2rem;
+  font-size: 1.8rem;
 }
 
-.wogg-ticker__item::after {
-  content: none;
+.wogg-ticker .wogg-ticker__item::after {
+  display: none !important;
+  content: none !important;
 }
 
 .wogg-ticker__icon {
@@ -34,11 +36,12 @@
   .wogg-ticker__item {
     gap: 0.9rem;
     padding: 1.4rem 2rem;
+    font-size: 1.4rem;
   }
 
   .wogg-ticker__icon {
-    width: 2rem;
-    height: 2rem;
-    flex-basis: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-basis: 1.6rem;
   }
 }
