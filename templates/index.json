@@ -3,13 +3,17 @@
     "wogg_hero": {
       "type": "wogg-hero",
       "settings": {
-        "overlay_opacity": 55,
-        "eyebrow": "10.000+ peludos felices",
-        "heading": "Alimento natural para perros y gatos",
+        "social_proof": "10.000+ Peludos Felices",
+        "heading_prefix": "Alimento",
+        "heading_highlight": "natural.",
+        "second_prefix": "Para",
+        "dogs_label": "perros",
+        "connector": "y",
+        "cats_label": "gatos",
         "text": "<p>Mejorá su salud con una dieta natural equilibrada, formulada por profesionales en nutrición animal.</p>",
         "primary_label": "Comprar ahora",
         "primary_link": "shopify://collections/all",
-        "secondary_label": "Calcular ración"
+        "secondary_label": ""
       }
     },
     "wogg_benefits": {
