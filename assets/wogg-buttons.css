@@ -1,3 +1,7 @@
+.wogg-real-hero__heading {
+  font-size: 4.6rem;
+}
+
 .wogg-base-section .wogg-button,
 .wogg-real-hero__button {
   display: inline-flex;
@@ -29,6 +33,10 @@
 }
 
 @media screen and (max-width: 749px) {
+  .wogg-real-hero__heading {
+    font-size: clamp(3.4rem, 10vw, 4.2rem);
+  }
+
   .wogg-base-section .wogg-button,
   .wogg-real-hero__button {
     gap: 1.2rem;
