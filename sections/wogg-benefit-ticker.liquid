@@ -1,0 +1,5 @@
+{{ 'wogg-home.css' | asset_url | stylesheet_tag }}
+{% if section.blocks.size > 0 %}<section class="wogg-section wogg-ticker" aria-label="Beneficios WOGG"><div class="wogg-ticker__track">{% for copy_index in (1..2) %}<div class="wogg-ticker__group"{% if copy_index == 2 %} aria-hidden="true"{% endif %}>{% for block in section.blocks %}<span class="wogg-ticker__item" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</span>{% endfor %}</div>{% endfor %}</div></section>{% endif %}
+{% schema %}
+{"name":"WOGG - Banda beneficios","tag":"section","class":"section","max_blocks":8,"blocks":[{"type":"benefit","name":"Beneficio","settings":[{"type":"text","id":"text","label":"Texto","default":"Ingredientes naturales"}]}],"presets":[{"name":"WOGG - Banda beneficios","blocks":[{"type":"benefit","settings":{"text":"Aprobado por veterinarios"}},{"type":"benefit","settings":{"text":"Sin harinas"}},{"type":"benefit","settings":{"text":"Alimento congelado BARF"}},{"type":"benefit","settings":{"text":"Sin conservantes"}}]}]}
+{% endschema %}
