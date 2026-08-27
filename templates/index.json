@@ -289,8 +289,13 @@
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
+        "kicker": "Así de fácil",
         "heading": "¿Cómo comenzar?",
         "text": "<p>En tres simples pasos</p>",
         "button_label": "Calcular ración",
@@ -361,15 +366,92 @@
         "padding_bottom": 64
       }
     },
+    "wogg_benefit_ticker_fgiPzW": {
+      "type": "wogg-benefit-ticker",
+      "blocks": {
+        "benefit_PNgiwD": {
+          "type": "benefit",
+          "settings": {
+            "icon_svg": "",
+            "text": "Aprobado por veterinarios"
+          }
+        },
+        "benefit_EqdbP4": {
+          "type": "benefit",
+          "settings": {
+            "icon_svg": "",
+            "text": "Sin harinas"
+          }
+        },
+        "benefit_fffWVM": {
+          "type": "benefit",
+          "settings": {
+            "icon_svg": "",
+            "text": "Alimento congelado BARF"
+          }
+        },
+        "benefit_Kknyzt": {
+          "type": "benefit",
+          "settings": {
+            "icon_svg": "",
+            "text": "Sin conservantes"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_PNgiwD",
+        "benefit_EqdbP4",
+        "benefit_fffWVM",
+        "benefit_Kknyzt"
+      ],
+      "name": "WOGG - Banda beneficios",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "community": {
       "type": "wogg-community",
       "blocks": {
-        "quote_1": { "type": "testimonial", "settings": {} },
-        "quote_2": { "type": "testimonial", "settings": {} },
-        "quote_3": { "type": "testimonial", "settings": {} },
-        "quote_4": { "type": "testimonial", "settings": {} },
-        "quote_5": { "type": "testimonial", "settings": {} },
-        "quote_6": { "type": "testimonial", "settings": {} }
+        "quote_1": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "quote_2": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "quote_3": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "quote_4": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "quote_5": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "quote_6": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        }
       },
       "block_order": [
         "quote_1",
@@ -446,7 +528,9 @@
     "purpose",
     "steps",
     "faq",
+    "wogg_benefit_ticker_fgiPzW",
     "community",
+    "location",
     "newsletter"
   ]
 }
