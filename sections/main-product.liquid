@@ -81,7 +81,14 @@
             {% render 'product-media-gallery', variant_images: variant_images %}
           {% elsif template.suffix == 'perros' %}
             <div class="wogg-product-placeholder" aria-label="Presentación del alimento natural WOGG">
-              {{ 'wogg-hero-products.png' | asset_url | image_tag: loading: 'eager', widths: '550, 750, 1100', sizes: '(min-width: 990px) 58vw, 100vw', alt: 'Alimento natural WOGG para perros' }}
+              <img
+                src="{{ 'wogg-hero-products.png' | asset_url }}"
+                alt="Alimento natural WOGG para perros"
+                width="1100"
+                height="900"
+                loading="eager"
+                fetchpriority="high"
+              >
               <span class="wogg-product-placeholder__badge">100% natural<br>y congelado</span>
             </div>
           {% else %}
