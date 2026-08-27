@@ -1,0 +1,69 @@
+.wogg-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(4rem, 7vw, 9rem);
+}
+
+.wogg-menu-card__title {
+  margin: 0 0 2.4rem;
+  color: #000;
+  font-family: "WOGG Open Sans Condensed", var(--font-heading-family);
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wogg-menu-card__media {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1.15 / 1;
+  border-radius: 1.6rem;
+  background: #f4eee5;
+}
+
+.wogg-menu-card__media img,
+.wogg-menu-card__media svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.wogg-menu-card__media:hover img {
+  transform: scale(1.02);
+}
+
+.wogg-menu-card__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 749px) {
+  .wogg-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .wogg-menu-card__title {
+    margin-bottom: 1.6rem;
+    font-size: 3.6rem;
+  }
+
+  .wogg-menu-card__media {
+    border-radius: 1.2rem;
+  }
+
+  .wogg-menu-card__action {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wogg-menu-card__media img {
+    transition: none;
+  }
+}
