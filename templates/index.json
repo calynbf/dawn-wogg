@@ -89,17 +89,6 @@
       "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4"],
       "settings": { "kicker": "Ingredientes reales", "heading": "¿De qué estamos hechos?", "text": "<p>Proteínas, vegetales y semillas seleccionadas para una nutrición completa.</p>", "button_label": "Conocé todos los ingredientes" }
     },
-    "comparison": {
-      "type": "wogg-comparison",
-      "blocks": {
-        "compare_1": { "type": "row", "settings": { "feature": "Ingredientes", "ours": "Reales y naturales", "others": "Ultraprocesados" } },
-        "compare_2": { "type": "row", "settings": { "feature": "Conservantes", "ours": "Sin conservantes", "others": "Puede contener aditivos" } },
-        "compare_3": { "type": "row", "settings": { "feature": "Harinas y rellenos", "ours": "Sin harinas", "others": "Frecuentes" } },
-        "compare_4": { "type": "row", "settings": { "feature": "Procesamiento", "ours": "Mínimo", "others": "Altas temperaturas" } }
-      },
-      "block_order": ["compare_1", "compare_2", "compare_3", "compare_4"],
-      "settings": { "kicker": "Elegí mejor", "heading": "Comida real vs. ultraprocesada", "text": "<p>Lo que comen todos los días hace una diferencia.</p>", "our_label": "WOGG BARF", "other_label": "Balanceado tradicional" }
-    },
     "purpose": {
       "type": "wogg-purpose",
       "settings": { "heading": "¡Lo van a amar!", "text": "<p>Y con nuestra garantía de plato limpio, si no les gusta, te ofrecemos un reembolso (hasta 5 kg).</p><p><strong>Con cada compra ayudás a salvar vidas 🐶🐱🐾</strong><br>Nuestro propósito es mejorar la calidad de vida y fomentar la adopción y la colaboración con refugios. Una razón más para probar WOGG.</p>", "button_label": "¡Quiero probar!", "button_link": "shopify://collections/all" }
@@ -126,10 +115,6 @@
       },
       "block_order": ["quote_1", "quote_2", "quote_3", "quote_4", "quote_5", "quote_6"],
       "settings": { "heading": "Unite a nuestra familia" }
-    },
-    "location": {
-      "type": "wogg-location",
-      "settings": { "kicker": "Llegamos a tu casa", "heading": "Encontrá WOGG cerca tuyo", "text": "<p>Conocé nuestras zonas de entrega y puntos de venta.</p>", "button_label": "Dónde encontrarnos" }
     },
     "faq": {
       "type": "wogg-faq",
