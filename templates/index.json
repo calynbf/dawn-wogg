@@ -270,22 +270,22 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "heading": "Elegí su menú",
-            "text": "Elegí entre nuestras opciones para perros o gatos."
+            "heading": "Elegí el menú de tu preferencia",
+            "text": "Elegí entre nuestras opciones de sabores: Pollo, Carne o Mix de proteínas."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "heading": "Hacé tu pedido online",
-            "text": "Confirmá el pedido de manera rápida y simple."
+            "heading": "Hacé tu Pedido Online",
+            "text": "Hacé tu pedido online de manera rápida y fácil. Elegí tus productos favoritos, confirmá el pedido y recibílo  en la puerta de tu casa."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "heading": "Recibilo en tu casa",
-            "text": "Nos ocupamos de llevarlo conservando su calidad."
+            "heading": "Recibí tu pedido sin moverte de tu casa",
+            "text": "Ya no tenés que preocuparte porque tu peludo se quedo sin comida. Acá lo hacemos fácil. Elegí, pedí y disfrutá.  Nosotros nos ocupamos del resto."
           }
         }
       },
