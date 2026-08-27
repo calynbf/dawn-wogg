@@ -1,0 +1,44 @@
+.wogg-base-section .wogg-button,
+.wogg-real-hero__button {
+  display: inline-flex;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  border: 0;
+  border-radius: 10rem;
+  background-color: #fff200 !important;
+  color: #000 !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  fill: #000;
+}
+
+.wogg-button::after,
+.wogg-real-hero__button::after {
+  content: "→";
+  font-family: Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media screen and (max-width: 749px) {
+  .wogg-base-section .wogg-button,
+  .wogg-real-hero__button {
+    gap: 1.2rem;
+    padding: 1.3rem 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+
+  .wogg-button::after,
+  .wogg-real-hero__button::after {
+    font-size: 1.9rem;
+  }
+}
