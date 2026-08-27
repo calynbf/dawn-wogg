@@ -68,15 +68,15 @@
     "value_grid": {
       "type": "wogg-value-grid",
       "blocks": {
-        "value_1": { "type": "benefit", "settings": { "icon": "⚖️", "heading": "Peso corporal ideal", "text": "Nutrición equilibrada para una condición saludable." } },
-        "value_2": { "type": "benefit", "settings": { "icon": "⚡", "heading": "Más energía", "text": "Vitalidad para disfrutar cada paseo y juego." } },
-        "value_3": { "type": "benefit", "settings": { "icon": "✨", "heading": "Pelaje brillante", "text": "Nutrientes reales que se notan por fuera." } },
-        "value_4": { "type": "benefit", "settings": { "icon": "🌿", "heading": "Mejor digestión", "text": "Ingredientes naturales y fáciles de reconocer." } },
-        "value_5": { "type": "benefit", "settings": { "icon": "🦷", "heading": "Salud dental", "text": "Una dieta adecuada ayuda al cuidado de sus dientes." } },
-        "value_6": { "type": "benefit", "settings": { "icon": "🛡️", "heading": "Más bienestar", "text": "Una base nutricional para una vida larga y feliz." } }
+        "value_1": { "type": "benefit", "settings": { "heading": "Peso Corporal Ideal" } },
+        "value_2": { "type": "benefit", "settings": { "heading": "Pelaje Más Sano y Brillante" } },
+        "value_3": { "type": "benefit", "settings": { "heading": "Más Energía" } },
+        "value_4": { "type": "benefit", "settings": { "heading": "Mejores Digestiones" } },
+        "value_5": { "type": "benefit", "settings": { "heading": "Reducción de Alergias" } },
+        "value_6": { "type": "benefit", "settings": { "heading": "Mejor Salud Dental" } }
       },
       "block_order": ["value_1", "value_2", "value_3", "value_4", "value_5", "value_6"],
-      "settings": { "kicker": "Alimentación con propósito", "heading": "La forma en que deberían comer", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.</p>" }
+      "settings": { "heading": "La forma en que tus peludos deberían comer.", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br>Experimentá resultados positivos en tan solo unas semanas.</p>" }
     },
     "ingredients": {
       "type": "wogg-ingredients",
