@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "wogg_hero": {
@@ -13,47 +22,114 @@
         "text": "<p>Mejorá su salud con una dieta natural equilibrada, formulada por profesionales en nutrición animal.</p>",
         "primary_label": "Comprar ahora",
         "primary_link": "shopify://collections/all",
-        "secondary_label": ""
+        "secondary_label": "",
+        "secondary_link": "",
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     },
     "wogg_benefits": {
       "type": "wogg-benefit-ticker",
       "blocks": {
-        "benefit_1": { "type": "benefit", "settings": { "text": "Aprobado por veterinarios" } },
-        "benefit_2": { "type": "benefit", "settings": { "text": "Sin harinas" } },
-        "benefit_3": { "type": "benefit", "settings": { "text": "Alimento congelado BARF" } },
-        "benefit_4": { "type": "benefit", "settings": { "text": "Ingredientes naturales" } },
-        "benefit_5": { "type": "benefit", "settings": { "text": "Sin conservantes" } }
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Aprobado por veterinarios"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sin harinas"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Alimento congelado BARF"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Ingredientes naturales"
+          }
+        },
+        "benefit_5": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sin conservantes"
+          }
+        }
       },
-      "block_order": ["benefit_1", "benefit_2", "benefit_3", "benefit_4", "benefit_5"],
-      "settings": {}
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4",
+        "benefit_5"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     },
     "wogg_pets": {
       "type": "wogg-pet-categories",
       "blocks": {
-        "dogs": { "type": "pet", "settings": { "title": "Perros", "button_label": "Ver alimento para perros" } },
-        "cats": { "type": "pet", "settings": { "title": "Gatos", "button_label": "Ver alimento para gatos" } }
+        "dogs": {
+          "type": "pet",
+          "settings": {
+            "title": "Perros",
+            "button_label": "Ver alimento para perros",
+            "link": ""
+          }
+        },
+        "cats": {
+          "type": "pet",
+          "settings": {
+            "title": "Gatos",
+            "button_label": "Ver alimento para gatos",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["dogs", "cats"],
+      "block_order": [
+        "dogs",
+        "cats"
+      ],
       "settings": {
         "heading": "Elegí su alimento",
-        "text": "<p>Nutrición real, pensada para cada integrante de la familia.</p>"
+        "text": "<p>Nutrición real, pensada para cada integrante de la familia.</p>",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Los favoritos de la familia",
-        "heading_size": "h1",
         "collection": "all",
         "products_to_show": 8,
+        "title": "Los favoritos de la familia",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -61,6 +137,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 72,
         "padding_bottom": 72
       }
@@ -75,81 +152,350 @@
         "value_5": { "type": "benefit", "settings": { "heading": "Reducción de Alergias" } },
         "value_6": { "type": "benefit", "settings": { "heading": "Mejor Salud Dental" } }
       },
-      "block_order": ["value_1", "value_2", "value_3", "value_4", "value_5", "value_6"],
-      "settings": { "heading": "La forma en que tus peludos deberían comer.", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br>Experimentá resultados positivos en tan solo unas semanas.</p>" }
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3",
+        "value_4",
+        "value_5",
+        "value_6"
+      ],
+      "settings": {
+        "heading": "La forma en que tus peludos deberían comer.",
+        "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br>Experimentá resultados positivos en tan solo unas semanas.</p>",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "ingredients": {
       "type": "wogg-ingredients",
       "blocks": {
-        "ingredient_1": { "type": "ingredient", "settings": { "heading": "Carne vacuna", "text": "Proteína de alta calidad." } },
-        "ingredient_2": { "type": "ingredient", "settings": { "heading": "Carne de pollo", "text": "Proteína magra y nutritiva." } },
-        "ingredient_3": { "type": "ingredient", "settings": { "heading": "Vegetales", "text": "Fibra y nutrientes naturales." } },
-        "ingredient_4": { "type": "ingredient", "settings": { "heading": "Semillas y Omega 3", "text": "Grasas esenciales para su bienestar." } }
+        "ingredient_1": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Carne vacuna",
+            "text": "Proteína de alta calidad."
+          }
+        },
+        "ingredient_2": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Carne de pollo",
+            "text": "Proteína magra y nutritiva."
+          }
+        },
+        "ingredient_3": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Vegetales",
+            "text": "Fibra y nutrientes naturales."
+          }
+        },
+        "ingredient_4": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Semillas y Omega 3",
+            "text": "Grasas esenciales para su bienestar."
+          }
+        }
       },
-      "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4"],
-      "settings": { "kicker": "Ingredientes reales", "heading": "¿De qué estamos hechos?", "text": "<p>Proteínas, vegetales y semillas seleccionadas para una nutrición completa.</p>", "button_label": "Conocé todos los ingredientes" }
+      "block_order": [
+        "ingredient_1",
+        "ingredient_2",
+        "ingredient_3",
+        "ingredient_4"
+      ],
+      "settings": {
+        "kicker": "Ingredientes reales",
+        "heading": "¿De qué estamos hechos?",
+        "text": "<p>Proteínas, vegetales y semillas seleccionadas para una nutrición completa.</p>",
+        "button_label": "Conocé todos los ingredientes",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "comparison": {
       "type": "wogg-comparison",
       "blocks": {
-        "compare_1": { "type": "row", "settings": { "feature": "Ingredientes", "ours": "Reales y naturales", "others": "Ultraprocesados" } },
-        "compare_2": { "type": "row", "settings": { "feature": "Conservantes", "ours": "Sin conservantes", "others": "Puede contener aditivos" } },
-        "compare_3": { "type": "row", "settings": { "feature": "Harinas y rellenos", "ours": "Sin harinas", "others": "Frecuentes" } },
-        "compare_4": { "type": "row", "settings": { "feature": "Procesamiento", "ours": "Mínimo", "others": "Altas temperaturas" } }
+        "compare_1": {
+          "type": "row",
+          "settings": {
+            "feature": "Ingredientes",
+            "ours": "Reales y naturales",
+            "others": "Ultraprocesados"
+          }
+        },
+        "compare_2": {
+          "type": "row",
+          "settings": {
+            "feature": "Conservantes",
+            "ours": "Sin conservantes",
+            "others": "Puede contener aditivos"
+          }
+        },
+        "compare_3": {
+          "type": "row",
+          "settings": {
+            "feature": "Harinas y rellenos",
+            "ours": "Sin harinas",
+            "others": "Frecuentes"
+          }
+        },
+        "compare_4": {
+          "type": "row",
+          "settings": {
+            "feature": "Procesamiento",
+            "ours": "Mínimo",
+            "others": "Altas temperaturas"
+          }
+        }
       },
-      "block_order": ["compare_1", "compare_2", "compare_3", "compare_4"],
-      "settings": { "kicker": "Elegí mejor", "heading": "Comida real vs. ultraprocesada", "text": "<p>Lo que comen todos los días hace una diferencia.</p>", "our_label": "WOGG BARF", "other_label": "Balanceado tradicional" }
+      "block_order": [
+        "compare_1",
+        "compare_2",
+        "compare_3",
+        "compare_4"
+      ],
+      "settings": {
+        "kicker": "Elegí mejor",
+        "heading": "Comida real vs. ultraprocesada",
+        "text": "<p>Lo que comen todos los días hace una diferencia.</p>",
+        "our_label": "WOGG BARF",
+        "other_label": "Balanceado tradicional",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "purpose": {
       "type": "wogg-purpose",
-      "settings": { "kicker": "Garantía de plato limpio", "heading": "Lo van a amar", "text": "<p>Si no les gusta, te ofrecemos un reembolso de hasta 5 kg. Además, con cada compra ayudás a salvar vidas y acompañar refugios.</p>", "button_label": "Quiero probar", "button_link": "shopify://collections/all" }
+      "settings": {
+        "kicker": "Garantía de plato limpio",
+        "heading": "Lo van a amar",
+        "text": "<p>Si no les gusta, te ofrecemos un reembolso de hasta 5 kg. Además, con cada compra ayudás a salvar vidas y acompañar refugios.</p>",
+        "button_label": "Quiero probar",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "steps": {
       "type": "wogg-steps",
       "blocks": {
-        "step_1": { "type": "step", "settings": { "heading": "Elegí su menú", "text": "Elegí entre nuestras opciones para perros o gatos." } },
-        "step_2": { "type": "step", "settings": { "heading": "Hacé tu pedido online", "text": "Confirmá el pedido de manera rápida y simple." } },
-        "step_3": { "type": "step", "settings": { "heading": "Recibilo en tu casa", "text": "Nos ocupamos de llevarlo conservando su calidad." } }
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "heading": "Elegí su menú",
+            "text": "Elegí entre nuestras opciones para perros o gatos."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "heading": "Hacé tu pedido online",
+            "text": "Confirmá el pedido de manera rápida y simple."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "heading": "Recibilo en tu casa",
+            "text": "Nos ocupamos de llevarlo conservando su calidad."
+          }
+        }
       },
-      "block_order": ["step_1", "step_2", "step_3"],
-      "settings": { "kicker": "Así de fácil", "heading": "¿Cómo comenzar?", "text": "<p>En tres simples pasos, comida real en su plato.</p>", "button_label": "Calcular ración" }
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "kicker": "Así de fácil",
+        "heading": "¿Cómo comenzar?",
+        "text": "<p>En tres simples pasos, comida real en su plato.</p>",
+        "button_label": "Calcular ración",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "community": {
       "type": "wogg-community",
       "blocks": {
-        "quote_1": { "type": "testimonial", "settings": { "quote": "El cambio se notó en su energía, digestión y entusiasmo a la hora de comer.", "author": "Familia de Rocco" } },
-        "quote_2": { "type": "testimonial", "settings": { "quote": "Ingredientes reales y la tranquilidad de saber qué está comiendo.", "author": "Familia de Mora" } },
-        "quote_3": { "type": "testimonial", "settings": { "quote": "Nos resultó simple empezar y ahora no deja nada en el plato.", "author": "Familia de Olivia" } }
+        "quote_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "El cambio se notó en su energía, digestión y entusiasmo a la hora de comer.",
+            "author": "Familia de Rocco"
+          }
+        },
+        "quote_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Ingredientes reales y la tranquilidad de saber qué está comiendo.",
+            "author": "Familia de Mora"
+          }
+        },
+        "quote_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Nos resultó simple empezar y ahora no deja nada en el plato.",
+            "author": "Familia de Olivia"
+          }
+        }
       },
-      "block_order": ["quote_1", "quote_2", "quote_3"],
-      "settings": { "kicker": "Familia WOGG", "heading": "Peludos felices, familias felices", "text": "<p>Experiencias reales de quienes eligieron una alimentación más natural.</p>" }
+      "block_order": [
+        "quote_1",
+        "quote_2",
+        "quote_3"
+      ],
+      "settings": {
+        "kicker": "Familia WOGG",
+        "heading": "Peludos felices, familias felices",
+        "text": "<p>Experiencias reales de quienes eligieron una alimentación más natural.</p>",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "location": {
       "type": "wogg-location",
-      "settings": { "kicker": "Llegamos a tu casa", "heading": "Encontrá WOGG cerca tuyo", "text": "<p>Conocé nuestras zonas de entrega y puntos de venta.</p>", "button_label": "Dónde encontrarnos" }
+      "settings": {
+        "kicker": "Llegamos a tu casa",
+        "heading": "Encontrá WOGG cerca tuyo",
+        "text": "<p>Conocé nuestras zonas de entrega y puntos de venta.</p>",
+        "button_label": "Dónde encontrarnos",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": true,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "faq": {
       "type": "wogg-faq",
       "blocks": {
-        "faq_1": { "type": "question", "settings": { "question": "¿Cuál es la diferencia con el alimento balanceado?", "answer": "<p>WOGG utiliza ingredientes reales y un procesamiento mínimo, sin harinas ni conservantes.</p>" } },
-        "faq_2": { "type": "question", "settings": { "question": "¿Cuánta comida tengo que darle?", "answer": "<p>La cantidad depende del peso ideal, edad y nivel de actividad. Usá nuestra calculadora de ración como guía.</p>" } },
-        "faq_3": { "type": "question", "settings": { "question": "¿Se debe hacer una transición?", "answer": "<p>Sí. Recomendamos una transición gradual para que su sistema digestivo se adapte correctamente.</p>" } },
-        "faq_4": { "type": "question", "settings": { "question": "¿Cómo se conserva?", "answer": "<p>Mantené los productos en el freezer y descongelá la ración diaria en la heladera.</p>" } },
-        "faq_5": { "type": "question", "settings": { "question": "¿Se puede cocinar?", "answer": "<p>Puede sellarse levemente, aunque recomendamos evitar una cocción prolongada para preservar nutrientes.</p>" } }
+        "faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuál es la diferencia con el alimento balanceado?",
+            "answer": "<p>WOGG utiliza ingredientes reales y un procesamiento mínimo, sin harinas ni conservantes.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuánta comida tengo que darle?",
+            "answer": "<p>La cantidad depende del peso ideal, edad y nivel de actividad. Usá nuestra calculadora de ración como guía.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se debe hacer una transición?",
+            "answer": "<p>Sí. Recomendamos una transición gradual para que su sistema digestivo se adapte correctamente.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se conserva?",
+            "answer": "<p>Mantené los productos en el freezer y descongelá la ración diaria en la heladera.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se puede cocinar?",
+            "answer": "<p>Puede sellarse levemente, aunque recomendamos evitar una cocción prolongada para preservar nutrientes.</p>"
+          }
+        }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5"],
-      "settings": { "kicker": "Resolvemos tus dudas", "heading": "Preguntas frecuentes", "text": "<p>Todo lo que necesitás saber para empezar una alimentación natural.</p>", "button_label": "Ver todas las preguntas" }
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "kicker": "Resolvemos tus dudas",
+        "heading": "Preguntas frecuentes",
+        "text": "<p>Todo lo que necesitás saber para empezar una alimentación natural.</p>",
+        "button_label": "Ver todas las preguntas",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
-        "heading": { "type": "heading", "settings": { "heading": "Unite a nuestra familia", "heading_size": "h1" } },
-        "paragraph": { "type": "paragraph", "settings": { "text": "<p>Recibí novedades, consejos y un beneficio exclusivo para tu primer pedido.</p>" } },
-        "form": { "type": "email_form", "settings": {} }
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unite a nuestra familia",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Recibí novedades, consejos y un beneficio exclusivo para tu primer pedido.</p>"
+          }
+        },
+        "form": {
+          "type": "email_form",
+          "settings": {}
+        }
       },
-      "block_order": ["heading", "paragraph", "form"],
-      "settings": { "color_scheme": "scheme-2", "full_width": true, "padding_top": 68, "padding_bottom": 68 }
+      "block_order": [
+        "heading",
+        "paragraph",
+        "form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
     }
   },
-  "order": ["wogg_hero", "wogg_benefits", "wogg_pets", "featured_collection", "value_grid", "ingredients", "comparison", "purpose", "steps", "community", "location", "faq", "newsletter"]
+  "order": [
+    "wogg_hero",
+    "wogg_benefits",
+    "wogg_pets",
+    "featured_collection",
+    "value_grid",
+    "ingredients",
+    "comparison",
+    "purpose",
+    "steps",
+    "community",
+    "location",
+    "faq",
+    "newsletter"
+  ]
 }
