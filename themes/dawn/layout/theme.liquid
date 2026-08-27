@@ -58,6 +58,11 @@
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'standard-actions-override.js' | asset_url }}" defer="defer"></script>
+    {{ 'wogg-dawn-base.css' | asset_url | stylesheet_tag }}
+    {{ 'wogg-home.css' | asset_url | stylesheet_tag }}
+    {{ 'wogg-sections.css' | asset_url | stylesheet_tag }}
+    {{ 'wogg-benefit-ticker.css' | asset_url | stylesheet_tag }}
+    {{ 'wogg-value-grid.css' | asset_url | stylesheet_tag }}
     {{ 'wogg-product.css' | asset_url | stylesheet_tag }}
 
     {%- if settings.animations_reveal_on_scroll -%}

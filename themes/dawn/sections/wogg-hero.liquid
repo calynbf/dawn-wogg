@@ -1,4 +1,4 @@
-{{ 'wogg-dawn-base.css' | asset_url | stylesheet_tag }}{% render 'wogg-section-settings', section: section %}
+{% render 'wogg-section-settings', section: section %}
 {{ 'wogg-hero-real.css' | asset_url | stylesheet_tag }}
 <style>@font-face{font-family:'WOGG Open Sans Condensed';src:url('{{ 'wogg-open-sans-condensed-bold.ttf' | asset_url }}') format('truetype');font-weight:700;font-style:normal;font-display:swap}</style>
 <div class="wogg-base-section color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} wogg-base-section--full{% endif %}{% unless section.settings.use_background %} wogg-base-section--transparent{% endunless %}"><section class="wogg-real-hero page-width" aria-labelledby="WoggHeroHeading-{{ section.id }}">
