@@ -138,7 +138,7 @@
         "faq_5": { "type": "question", "settings": { "question": "¿Se puede cocinar?", "answer": "<p>Puede sellarse levemente, aunque recomendamos evitar una cocción prolongada para preservar nutrientes.</p>" } }
       },
       "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5"],
-      "settings": { "kicker": "Resolvemos tus dudas", "heading": "Preguntas frecuentes", "text": "<p>Todo lo que necesitás saber para empezar una alimentación natural.</p>", "button_label": "Ver todas las preguntas" }
+      "settings": { "heading": "Preguntas frecuentes", "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>", "button_label": "" }
     },
     "newsletter": {
       "type": "newsletter",
