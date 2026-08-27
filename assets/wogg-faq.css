@@ -1,0 +1,139 @@
+.wogg-faq-classic__header {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.wogg-faq-classic__title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #000;
+  font-family: "WOGG Open Sans Condensed", var(--font-heading-family);
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.wogg-faq-classic__title strong {
+  padding: 0.6rem 1.4rem;
+  border: 0.2rem solid #000;
+  border-radius: 10rem;
+  background: #fff200;
+  font: inherit;
+}
+
+.wogg-faq-classic__intro {
+  max-width: 112rem;
+  margin: 2rem auto 0;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.45;
+}
+
+.wogg-faq-classic__items {
+  width: 100%;
+}
+
+.wogg-faq-classic__item {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.wogg-faq-classic__item:first-child {
+  border-top: 0;
+}
+
+.wogg-faq-classic__item summary {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.8rem 0;
+  color: #000;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.35;
+  list-style: none;
+}
+
+.wogg-faq-classic__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.wogg-faq-classic__item summary::after {
+  content: none;
+}
+
+.wogg-faq-classic__item summary i {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+}
+
+.wogg-faq-classic__item summary i::before,
+.wogg-faq-classic__item summary i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.9rem;
+  height: 0.1rem;
+  background: #000;
+  transform: translate(-50%, -50%);
+}
+
+.wogg-faq-classic__item summary i::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform 180ms ease;
+}
+
+.wogg-faq-classic__item[open] summary i::after {
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.wogg-faq-classic__answer {
+  max-width: 100rem;
+  padding: 0 5rem 2.8rem 0;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 749px) {
+  .wogg-faq-classic__header {
+    margin-bottom: 3.5rem;
+  }
+
+  .wogg-faq-classic__title {
+    gap: 0.7rem;
+    font-size: 3.2rem;
+  }
+
+  .wogg-faq-classic__title strong {
+    padding: 0.4rem 1rem;
+  }
+
+  .wogg-faq-classic__intro {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .wogg-faq-classic__item summary {
+    gap: 1.4rem;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+  }
+
+  .wogg-faq-classic__answer {
+    padding: 0 2.5rem 2rem 0;
+    font-size: 1.5rem;
+  }
+}
