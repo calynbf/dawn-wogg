@@ -154,5 +154,5 @@
       "settings": { "color_scheme": "scheme-2", "full_width": true, "padding_top": 68, "padding_bottom": 68 }
     }
   },
-  "order": ["wogg_hero", "wogg_benefits", "wogg_pets", "featured_collection", "value_grid", "ingredients", "purpose", "steps", "community", "location", "faq", "newsletter"]
+  "order": ["wogg_hero", "wogg_benefits", "wogg_pets", "featured_collection", "value_grid", "ingredients", "purpose", "steps", "community", "faq", "newsletter"]
 }
