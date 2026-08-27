@@ -249,6 +249,49 @@
         "padding_bottom": 64
       }
     },
+    "steps": {
+      "type": "wogg-steps",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "heading": "Elegí su menú",
+            "text": "Elegí entre nuestras opciones para perros o gatos."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "heading": "Hacé tu pedido online",
+            "text": "Confirmá el pedido de manera rápida y simple."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "heading": "Recibilo en tu casa",
+            "text": "Nos ocupamos de llevarlo conservando su calidad."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "kicker": "Así de fácil",
+        "heading": "¿Cómo comenzar?",
+        "text": "<p>En tres simples pasos, comida real en su plato.</p>",
+        "button_label": "Calcular ración",
+        "button_link": "",
+        "color_scheme": "",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "purpose": {
       "type": "wogg-purpose",
       "settings": {
@@ -259,81 +302,6 @@
         "button_link": "shopify://collections/all",
         "color_scheme": "",
         "full_width": true,
-        "use_background": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "comparison": {
-      "type": "wogg-comparison",
-      "blocks": {
-        "compare_1": {
-          "type": "row",
-          "settings": {
-            "feature": "Ingredientes",
-            "ours": "Reales y naturales",
-            "others": "Ultraprocesados"
-          }
-        },
-        "compare_2": {
-          "type": "row",
-          "settings": {
-            "feature": "Conservantes",
-            "ours": "Sin conservantes",
-            "others": "Puede contener aditivos"
-          }
-        },
-        "compare_3": {
-          "type": "row",
-          "settings": {
-            "feature": "Harinas y rellenos",
-            "ours": "Sin harinas",
-            "others": "Frecuentes"
-          }
-        },
-        "compare_4": {
-          "type": "row",
-          "settings": {
-            "feature": "Procesamiento",
-            "ours": "Mínimo",
-            "others": "Altas temperaturas"
-          }
-        }
-      },
-      "block_order": [
-        "compare_1",
-        "compare_2",
-        "compare_3",
-        "compare_4"
-      ],
-      "settings": {
-        "kicker": "Elegí mejor",
-        "heading": "Comida real vs. ultraprocesada",
-        "text": "<p>Lo que comen todos los días hace una diferencia.</p>",
-        "our_label": "WOGG BARF",
-        "other_label": "Balanceado tradicional",
-        "color_scheme": "",
-        "full_width": false,
-        "use_background": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "steps": {
-      "type": "wogg-steps",
-      "blocks": {
-        "step_1": { "type": "step", "settings": { "heading": "Elegí el menú de tu preferencia", "text": "Elegí entre nuestras opciones de sabores: Pollo, Carne o Mix de proteínas." } },
-        "step_2": { "type": "step", "settings": { "heading": "Hacé tu Pedido Online", "text": "Hacé tu pedido online de manera rápida y fácil. Elegí tus productos favoritos, confirmá el pedido y recibílo en la puerta de tu casa." } },
-        "step_3": { "type": "step", "settings": { "heading": "Recibí tu pedido sin moverte de tu casa", "text": "Ya no tenés que preocuparte porque tu peludo se quedó sin comida. Acá lo hacemos fácil. Elegí, pedí y disfrutá. Nosotros nos ocupamos del resto." } }
-      },
-      "block_order": ["step_1", "step_2", "step_3"],
-      "settings": {
-        "heading": "¿Cómo comenzar?",
-        "text": "<p>En tres simples pasos</p>",
-        "button_label": "Calcular ración",
-        "button_link": "",
-        "color_scheme": "",
-        "full_width": false,
         "use_background": false,
         "padding_top": 64,
         "padding_bottom": 64
@@ -442,9 +410,10 @@
         "faq_5"
       ],
       "settings": {
+        "kicker": "Resolvemos tus dudas",
         "heading": "Preguntas frecuentes",
-        "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>",
-        "button_label": "",
+        "text": "<p>Todo lo que necesitás saber para empezar una alimentación natural.</p>",
+        "button_label": "Ver todas las preguntas",
         "button_link": "",
         "color_scheme": "",
         "full_width": false,
