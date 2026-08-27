@@ -1,0 +1,9 @@
+# Shopify Theme Access credentials
+.env
+.env.*
+!.env.example
+
+# Dependencies and local tooling
+node_modules/
+.shopify/
+.theme-backups/
