@@ -1,0 +1,44 @@
+.wogg-ticker__item {
+  gap: 1.2rem;
+}
+
+.wogg-ticker__item::after {
+  content: none;
+}
+
+.wogg-ticker__icon {
+  display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.wogg-ticker__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wogg-ticker__text {
+  display: inline-block;
+}
+
+.wogg-ticker:hover .wogg-ticker__track,
+.wogg-ticker:focus-within .wogg-ticker__track {
+  animation-play-state: paused;
+}
+
+@media screen and (max-width: 749px) {
+  .wogg-ticker__item {
+    gap: 0.9rem;
+    padding: 1.4rem 2rem;
+  }
+
+  .wogg-ticker__icon {
+    width: 2rem;
+    height: 2rem;
+    flex-basis: 2rem;
+  }
+}
