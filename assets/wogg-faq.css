@@ -66,8 +66,10 @@
   display: none;
 }
 
-.wogg-faq-classic__item summary::after {
-  content: none;
+.wogg-faq.wogg-faq--classic .wogg-faq-classic__item summary::after,
+.wogg-faq.wogg-faq--classic .wogg-faq-classic__item[open] summary::after {
+  content: none !important;
+  display: none !important;
 }
 
 .wogg-faq-classic__icon {
