@@ -64,7 +64,22 @@
       },
       "block_order": ["f1", "f2", "f3", "f4", "f5"],
       "settings": { "highlight": "alternativa", "our_heading": "Alimento Natural WOGG", "other_heading": "Alimento Balanceado Tradicional", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+    },
+    "faq": {
+      "type": "wogg-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "¿Cuál es la diferencia con el alimento balanceado?", "answer": "<p>Nuestro alimento, también conocido como B.A.R.F. (comida cruda biológicamente apropiada), es una alimentación 100% natural acorde a su condición de carnívoros: fresca, sin conservantes, sin aditivos y libre de granos. A diferencia del balanceado, ofrece una dieta no procesada, rica en proteínas y baja en carbohidratos.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "¿Cuáles son los beneficios de la dieta BARF?", "answer": "<p>Una dieta equilibrada de alimentos crudos ayuda a mantener el peso ideal, mejora el pelaje, aumenta la energía, favorece la digestión, fortalece el sistema inmunológico, reduce el sarro y contribuye a una mejor hidratación y bienestar general.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "¿Quiénes pueden consumir BARF?", "answer": "<p>Los gatos pueden consumir BARF desde el destete. Si tu mascota está sana y no presenta patologías previas, puede incorporar nuestro alimento respetando la cantidad adecuada para su edad, peso y etapa de crecimiento.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "¿Qué cantidad de comida BARF tengo que darle?", "answer": "<p>La cantidad depende del peso ideal, edad, actividad, contextura y metabolismo. Como orientación, un gato adulto suele consumir alrededor del 3,5% de su peso ideal por día. Ajustá la porción según su evolución y condición corporal.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "¿Se debe hacer una transición?", "answer": "<p>Sí. Si siempre consumió alimento balanceado, recomendamos sellar levemente el alimento durante 3 o 4 días y disminuir gradualmente la cocción hasta ofrecerlo crudo. No mezcles balanceado y BARF en el mismo plato.</p>" } },
+        "q6": { "type": "question", "settings": { "question": "¿Cómo administrarle el alimento a mi mascota?", "answer": "<p>Descongelá la ración en la heladera durante 24 horas, abrí el envase y serví la cantidad necesaria. Recomendamos retirarla de la heladera unos minutos antes para ofrecerla a una temperatura agradable.</p>" } },
+        "q7": { "type": "question", "settings": { "question": "¿Cómo conservar el alimento?", "answer": "<p>Conservá los menús en el freezer. La ración del día debe descongelarse en la heladera durante 24 horas. Puede mantenerse congelado hasta 6 meses, hasta 3 días refrigerado sin abrir y hasta 48 horas una vez abierto.</p>" } },
+        "q8": { "type": "question", "settings": { "question": "¿Se puede cocinar el alimento?", "answer": "<p>Sí, aunque recomendamos únicamente una cocción leve o sellado en sartén. Una cocción prolongada puede reducir nutrientes esenciales y alterar el equilibrio nutricional del alimento.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
+      "settings": { "kicker": "", "heading": "Preguntas frecuentes", "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>", "button_label": "", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
     }
   },
-  "order": ["main", "ingredients_grid", "benefits", "alternative"]
+  "order": ["main", "ingredients_grid", "benefits", "alternative", "faq"]
 }
