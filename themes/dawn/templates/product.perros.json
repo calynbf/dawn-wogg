@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "trust_strip": {
+      "type": "wogg-product-trust-strip",
+      "blocks": {
+        "shipping": { "type": "item", "settings": { "icon": "shipping", "text": "Envío gratis" } },
+        "guarantee": { "type": "item", "settings": { "icon": "guarantee", "text": "Garantía de Satisfacción" } },
+        "refuge": { "type": "item", "settings": { "icon": "refuge", "text": "Ayudás a Refugios Animales" } },
+        "happy": { "type": "item", "settings": { "icon": "happy", "text": "+10.000 peludos felices" } }
+      },
+      "block_order": ["shipping", "guarantee", "refuge", "happy"],
+      "settings": { "color_scheme": "scheme-3", "full_width": true, "use_background": true, "padding_top": 16, "padding_bottom": 16 }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -407,6 +418,7 @@
     }
   },
   "order": [
+    "trust_strip",
     "main",
     "ingredients_grid",
     "benefits",

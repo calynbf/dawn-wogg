@@ -1,0 +1,57 @@
+.wogg-product-trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.wogg-product-trust-strip__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 0;
+  color: rgb(var(--color-foreground));
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.wogg-product-trust-strip__icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 989px) {
+  .wogg-product-trust-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem 2rem;
+  }
+
+  .wogg-product-trust-strip__item {
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .wogg-product-trust-strip {
+    gap: 1.2rem 1rem;
+  }
+
+  .wogg-product-trust-strip__item {
+    gap: .7rem;
+    font-size: 1.3rem;
+  }
+
+  .wogg-product-trust-strip__icon {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
