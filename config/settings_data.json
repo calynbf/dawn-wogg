@@ -223,7 +223,18 @@
       },
       "scheme-42b48575-2c4d-4fdd-9f1d-8e8f1fb42159": {
         "settings": {
-          "background": "#FFF200",
+          "background": "#fff200",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#fff200",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#fff200",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-cc8569e6-adb9-47e4-a628-8d3263f4fa99": {
+        "settings": {
+          "background": "#FFFEED",
           "background_gradient": "",
           "text": "#121212",
           "button": "#fff200",
