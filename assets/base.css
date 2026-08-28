@@ -2579,13 +2579,10 @@ input[type='checkbox'] {
   margin-right: -1.2rem;
 }
 
+.header__icon--search .icon-search,
+.header__icon--account .icon-account,
 .header__icon--cart .icon {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.header__icon--account .icon-account {
-  width: 2.2rem;
+  width: 2.4rem;
   height: 2.4rem;
 }
 
