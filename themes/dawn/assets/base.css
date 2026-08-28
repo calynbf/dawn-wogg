@@ -2579,6 +2579,16 @@ input[type='checkbox'] {
   margin-right: -1.2rem;
 }
 
+.header__icon--cart .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.header__icon--account .icon-account {
+  width: 2.2rem;
+  height: 2.4rem;
+}
+
 .header__icon--menu[aria-expanded='true']::before {
   content: '';
   top: 100%;
