@@ -1,0 +1,74 @@
+{{ 'wogg-product-trust-strip.css' | asset_url | stylesheet_tag }}
+
+{% render 'wogg-section-settings', section: section %}
+
+<div class="wogg-base-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.use_background %} wogg-base-section--transparent{% endunless %}{% if section.settings.full_width %} wogg-base-section--full{% endif %}">
+  <div class="page-width">
+    <div class="wogg-product-trust-strip" role="list">
+      {%- for block in section.blocks -%}
+        <div class="wogg-product-trust-strip__item" role="listitem" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != 'none' -%}
+            <img
+              class="wogg-product-trust-strip__icon"
+              src="{{ 'icon-wogg-trust-' | append: block.settings.icon | append: '.svg' | asset_url }}"
+              alt=""
+              width="65"
+              height="65"
+              loading="eager"
+            >
+          {%- endif -%}
+          <span>{{ block.settings.text | escape }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "WOGG · Franja confianza",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Esquema de color", "default": "scheme-1" },
+    { "type": "checkbox", "id": "full_width", "label": "Ancho completo", "default": true },
+    { "type": "checkbox", "id": "use_background", "label": "Usar fondo del esquema", "default": true },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Margen superior", "default": 16 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Margen inferior", "default": 16 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Beneficio",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icono",
+          "default": "shipping",
+          "options": [
+            { "value": "shipping", "label": "Envío" },
+            { "value": "guarantee", "label": "Garantía" },
+            { "value": "refuge", "label": "Refugios" },
+            { "value": "happy", "label": "Peludos felices" },
+            { "value": "none", "label": "Sin icono" }
+          ]
+        },
+        { "type": "text", "id": "text", "label": "Texto", "default": "Envío gratis" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "WOGG · Franja confianza",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "shipping", "text": "Envío gratis" } },
+        { "type": "item", "settings": { "icon": "guarantee", "text": "Garantía de Satisfacción" } },
+        { "type": "item", "settings": { "icon": "refuge", "text": "Ayudás a Refugios Animales" } },
+        { "type": "item", "settings": { "icon": "happy", "text": "+10.000 peludos felices" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
