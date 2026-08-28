@@ -2580,10 +2580,14 @@ input[type='checkbox'] {
 }
 
 .header__icon--search .icon-search,
-.header__icon--account .icon-account,
-.header__icon--cart .icon {
+.header__icon--account .icon-account {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.header__icon--cart .icon {
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
