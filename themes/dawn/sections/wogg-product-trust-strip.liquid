@@ -1,25 +1,36 @@
 {{ 'wogg-product-trust-strip.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'wogg-product-trust-strip.js' | asset_url }}" defer="defer"></script>
 
 {% render 'wogg-section-settings', section: section %}
 
 <div class="wogg-base-section color-{{ section.settings.color_scheme }} gradient{% unless section.settings.use_background %} wogg-base-section--transparent{% endunless %}{% if section.settings.full_width %} wogg-base-section--full{% endif %}">
   <div class="page-width">
-    <div class="wogg-product-trust-strip" role="list">
-      {%- for block in section.blocks -%}
-        <div class="wogg-product-trust-strip__item" role="listitem" {{ block.shopify_attributes }}>
-          {%- if block.settings.icon != 'none' -%}
-            <img
-              class="wogg-product-trust-strip__icon"
-              src="{{ 'icon-wogg-trust-' | append: block.settings.icon | append: '.svg' | asset_url }}"
-              alt=""
-              width="65"
-              height="65"
-              loading="eager"
-            >
-          {%- endif -%}
-          <span>{{ block.settings.text | escape }}</span>
+    <div class="wogg-product-trust-slider" data-wogg-trust-slider>
+      <button class="wogg-product-trust-slider__arrow wogg-product-trust-slider__arrow--prev" type="button" aria-label="Beneficio anterior" data-wogg-trust-prev>
+        <span aria-hidden="true">&#8249;</span>
+      </button>
+      <div class="wogg-product-trust-slider__viewport">
+        <div class="wogg-product-trust-strip" role="list" data-wogg-trust-track>
+          {%- for block in section.blocks -%}
+            <div class="wogg-product-trust-strip__item" role="listitem" {{ block.shopify_attributes }}>
+              {%- if block.settings.icon != 'none' -%}
+                <img
+                  class="wogg-product-trust-strip__icon"
+                  src="{{ 'icon-wogg-trust-' | append: block.settings.icon | append: '.svg' | asset_url }}"
+                  alt=""
+                  width="65"
+                  height="65"
+                  loading="eager"
+                >
+              {%- endif -%}
+              <span>{{ block.settings.text | escape }}</span>
+            </div>
+          {%- endfor -%}
         </div>
-      {%- endfor -%}
+      </div>
+      <button class="wogg-product-trust-slider__arrow wogg-product-trust-slider__arrow--next" type="button" aria-label="Siguiente beneficio" data-wogg-trust-next>
+        <span aria-hidden="true">&#8250;</span>
+      </button>
     </div>
   </div>
 </div>
