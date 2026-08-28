@@ -39,16 +39,16 @@
     "benefits": {
       "type": "wogg-value-grid",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon_name": "heart", "heading": "Mejora la salud de tu mascota", "text": "" } },
-        "b2": { "type": "benefit", "settings": { "icon_name": "check", "heading": "Previene la obesidad", "text": "" } },
-        "b3": { "type": "benefit", "settings": { "icon_name": "paw", "heading": "Mejora el bienestar general", "text": "" } },
-        "b4": { "type": "benefit", "settings": { "icon_name": "lightning", "heading": "Aumenta la energía y vitalidad", "text": "" } },
-        "b5": { "type": "benefit", "settings": { "icon_name": "star", "heading": "Ayuda a mantener un peso ideal", "text": "" } },
-        "b6": { "type": "benefit", "settings": { "icon_name": "leaf", "heading": "Reducción del olor", "text": "" } },
-        "b7": { "type": "benefit", "settings": { "icon_name": "check", "heading": "Salud dental y previene el sarro", "text": "" } },
-        "b8": { "type": "benefit", "settings": { "icon_name": "leaf", "heading": "Mejora la digestión", "text": "" } },
-        "b9": { "type": "benefit", "settings": { "icon_name": "paw", "heading": "Mejora el nivel de hidratación", "text": "" } },
-        "b10": { "type": "benefit", "settings": { "icon_name": "star", "heading": "Piel más sana y pelo más brillante", "text": "" } }
+        "b1": { "type": "benefit", "settings": { "icon_name": "health", "heading": "Mejora la salud de tu mascota", "text": "" } },
+        "b2": { "type": "benefit", "settings": { "icon_name": "obesity", "heading": "Previene la obesidad", "text": "" } },
+        "b3": { "type": "benefit", "settings": { "icon_name": "wellbeing", "heading": "Mejora el bienestar general", "text": "" } },
+        "b4": { "type": "benefit", "settings": { "icon_name": "energy", "heading": "Aumenta la energía y vitalidad", "text": "" } },
+        "b5": { "type": "benefit", "settings": { "icon_name": "ideal-weight", "heading": "Ayuda a mantener un peso ideal", "text": "" } },
+        "b6": { "type": "benefit", "settings": { "icon_name": "odor", "heading": "Reducción del olor", "text": "" } },
+        "b7": { "type": "benefit", "settings": { "icon_name": "dental", "heading": "Salud dental y previene el sarro", "text": "" } },
+        "b8": { "type": "benefit", "settings": { "icon_name": "digestion", "heading": "Mejora la digestión", "text": "" } },
+        "b9": { "type": "benefit", "settings": { "icon_name": "hydration", "heading": "Mejora el nivel de hidratación", "text": "" } },
+        "b10": { "type": "benefit", "settings": { "icon_name": "coat", "heading": "Piel más sana y pelo más brillante", "text": "" } }
       },
       "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
       "settings": { "layout": "cards", "kicker": "", "heading": "Beneficios", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable. Experimentá resultados positivos en tan solo unas semanas.</p>", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
