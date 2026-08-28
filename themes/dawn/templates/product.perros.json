@@ -1,42 +1,417 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
-        "eyebrow": { "type": "text", "settings": { "text": "MENÚ WOGG PARA PERROS", "text_style": "uppercase" } },
-        "rating": { "type": "rating", "settings": {} },
-        "title": { "type": "title", "settings": {} },
-        "intro": { "type": "text", "settings": { "text": "Alimento completo, congelado y formulado por profesionales en nutrición animal.", "text_style": "body" } },
-        "features": { "type": "custom_liquid", "settings": { "custom_liquid": "<ul class='wogg-product-highlights'><li>Alimento congelado, 100% natural</li><li>Sin conservantes artificiales ni harinas</li><li>Con cada compra ayudás a salvar vidas 🐾</li><li>Formulado por veterinarios</li><li>Porciones de 500 gramos</li><li>Envase reciclable</li></ul>" } },
-        "price": { "type": "price", "settings": {} },
-        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
-        "quantity": { "type": "quantity_selector", "settings": {} },
-        "buy": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false } },
-        "purchase_benefits": { "type": "custom_liquid", "settings": { "custom_liquid": "<div class='wogg-purchase-benefits'><span>🚚 Envíos programados</span><span>❄️ Llega congelado</span><span>🐾 Tu compra ayuda</span></div>" } },
-        "ingredients": { "type": "collapsible_tab", "settings": { "heading": "Ingredientes", "icon": "carrot", "content": "<p>45% huesos carnosos de pollo, 35% carne de vaca y/o pollo, 10% vísceras, 10% vegetales y suplementos naturales.</p>" } },
-        "portion": { "type": "collapsible_tab", "settings": { "heading": "Tabla de consumo", "icon": "clipboard", "content": "<p>Un perro adulto consume aproximadamente entre 2% y 3% de su peso ideal por día. El resultado es orientativo; utilizá la calculadora para una recomendación personalizada.</p>" } },
-        "nutrition": { "type": "collapsible_tab", "settings": { "heading": "Información nutricional", "icon": "leaf", "content": "<p>Valor energético: 148 kcal/100 g. Humedad 71,5 g; proteína 15,9 g; grasa 8,6 g; carbohidratos 1,7 g; cenizas 2,3 g.</p>" } },
-        "shipping": { "type": "collapsible_tab", "settings": { "heading": "Envío y conservación", "icon": "snowflake", "content": "<p>Conservar en freezer. Descongelar la ración del día en heladera durante 24 horas. Las fechas disponibles se seleccionan durante el checkout.</p>" } }
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "MENÚ WOGG PARA PERROS",
+            "text_style": "uppercase"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "intro": {
+          "type": "text",
+          "settings": {
+            "text": "Alimento natural BARF para perros, completo, congelado y elaborado con ingredientes frescos.",
+            "text_style": "body"
+          }
+        },
+        "features": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class='wogg-product-highlights'><li>Alimento congelado, 100% natural</li><li>Sin conservantes artificiales ni harinas</li><li>Con cada compra ayudás a salvar vidas 🐾</li><li>Porciones de 500 gramos</li><li>Envase reciclable</li></ul>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "ingredients": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes",
+            "icon": "carrot",
+            "content": "<p>45% huesos carnosos de pollo, 35% carne de vaca y/o pollo, 10% vísceras, 10% vegetales y suplementos naturales.</p>",
+            "page": ""
+          }
+        },
+        "portion": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Tabla de consumo",
+            "icon": "clipboard",
+            "content": "<p>Un perro adulto consume aproximadamente entre 2% y 3% de su peso ideal por día. El resultado es orientativo.</p>",
+            "page": ""
+          }
+        },
+        "shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Envío y conservación",
+            "icon": "snowflake",
+            "content": "<p>Conservar en freezer y descongelar la ración diaria en la heladera durante 24 horas.</p>",
+            "page": ""
+          }
+        }
       },
-      "block_order": ["eyebrow", "rating", "title", "intro", "features", "price", "variant_picker", "quantity", "buy", "purchase_benefits", "ingredients", "portion", "nutrition", "shipping"],
-      "settings": { "enable_sticky_info": true, "color_scheme": "scheme-2", "media_size": "large", "constrain_to_viewport": true, "media_fit": "contain", "gallery_layout": "thumbnail_slider", "mobile_thumbnails": "show", "media_position": "left", "image_zoom": "lightbox", "hide_variants": true, "enable_video_looping": false, "padding_top": 36, "padding_bottom": 40 }
+      "block_order": [
+        "eyebrow",
+        "rating",
+        "title",
+        "intro",
+        "features",
+        "price",
+        "variant_picker",
+        "quantity",
+        "buy",
+        "ingredients",
+        "portion",
+        "shipping"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-2",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "ingredients_grid": {
+      "type": "wogg-ingredients",
+      "blocks": {
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-22.png",
+            "heading": "Carne vacuna",
+            "text": ""
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-23.png",
+            "heading": "Hígado vacuno",
+            "text": ""
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-24.png",
+            "heading": "Vísceras vacunas",
+            "text": ""
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-9.png",
+            "heading": "Carne de pollo",
+            "text": ""
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-25.png",
+            "heading": "Hígado de pollo",
+            "text": ""
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-26.png",
+            "heading": "Carcaza de pollo",
+            "text": ""
+          }
+        },
+        "i7": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-16.png",
+            "heading": "Zanahoria",
+            "text": ""
+          }
+        },
+        "i8": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Frame-16.jpg",
+            "heading": "Zapallito verde",
+            "text": ""
+          }
+        },
+        "i9": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-18.png",
+            "heading": "Manzana",
+            "text": ""
+          }
+        },
+        "i10": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-10.png",
+            "heading": "Semillas de Lino",
+            "text": ""
+          }
+        },
+        "ingredient_BaJWdn": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-27.png",
+            "heading": "Semillas de Zapallo",
+            "text": "Proteína de alta calidad."
+          }
+        },
+        "ingredient_XVHbd6": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-12.png",
+            "heading": "Cúrcuma",
+            "text": "Proteína de alta calidad."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8",
+        "i9",
+        "i10",
+        "ingredient_BaJWdn",
+        "ingredient_XVHbd6"
+      ],
+      "settings": {
+        "kicker": "Ingredientes reales",
+        "heading": "¿De qué estamos hechos?",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "benefits": {
       "type": "wogg-value-grid",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "⚡", "heading": "Más energía", "text": "Vitalidad para disfrutar cada día." } },
-        "b2": { "type": "benefit", "settings": { "icon": "🌿", "heading": "Mejor digestión", "text": "Ingredientes naturales y fáciles de digerir." } },
-        "b3": { "type": "benefit", "settings": { "icon": "✨", "heading": "Piel y pelaje", "text": "Nutrientes reales que se notan por fuera." } },
-        "b4": { "type": "benefit", "settings": { "icon": "⚖️", "heading": "Peso ideal", "text": "Alto en proteínas y bajo en carbohidratos." } },
-        "b5": { "type": "benefit", "settings": { "icon": "🦷", "heading": "Salud dental", "text": "Ayuda al cuidado dental y del aliento." } },
-        "b6": { "type": "benefit", "settings": { "icon": "💧", "heading": "Más hidratación", "text": "Alimento fresco con humedad natural." } }
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "health",
+            "icon": "⚡",
+            "heading": "Mejora la salud de tu mascota",
+            "text": ""
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "obesity",
+            "icon": "⚡",
+            "heading": "Previene la obesidad",
+            "text": ""
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "wellbeing",
+            "icon": "⚡",
+            "heading": "Mejora el bienestar general",
+            "text": ""
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "energy",
+            "icon": "⚡",
+            "heading": "Aumenta la energía y vitalidad",
+            "text": ""
+          }
+        },
+        "b5": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "ideal-weight",
+            "icon": "⚡",
+            "heading": "Ayuda a mantener un peso ideal",
+            "text": ""
+          }
+        },
+        "b6": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "odor",
+            "icon": "⚡",
+            "heading": "Reducción del olor",
+            "text": ""
+          }
+        },
+        "b7": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "dental",
+            "icon": "⚡",
+            "heading": "Salud dental y previene el sarro",
+            "text": ""
+          }
+        },
+        "b8": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "digestion",
+            "icon": "⚡",
+            "heading": "Mejora la digestión",
+            "text": ""
+          }
+        },
+        "b9": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "hydration",
+            "icon": "⚡",
+            "heading": "Mejora el nivel de hidratación",
+            "text": ""
+          }
+        },
+        "b10": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "coat",
+            "icon": "⚡",
+            "heading": "Piel más sana y pelo más brillante",
+            "text": ""
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6"],
-      "settings": { "kicker": "Beneficios", "heading": "Resultados que se sienten", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.</p>", "color_scheme": "scheme-2", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
+      "settings": {
+        "layout": "cards",
+        "kicker": "",
+        "heading": "Beneficios",
+        "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable. Experimentá resultados positivos en tan solo unas semanas.</p>",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
-    "ingredients_grid": { "type": "wogg-ingredients", "blocks": { "i1": { "type": "ingredient", "settings": { "heading": "Carne vacuna", "text": "Proteína de alta calidad." } }, "i2": { "type": "ingredient", "settings": { "heading": "Pollo", "text": "Huesos carnosos y carne magra." } }, "i3": { "type": "ingredient", "settings": { "heading": "Vísceras", "text": "Nutrientes esenciales naturales." } }, "i4": { "type": "ingredient", "settings": { "heading": "Vegetales y semillas", "text": "Fibra, Omega 3 y antioxidantes." } } }, "block_order": ["i1", "i2", "i3", "i4"], "settings": { "kicker": "Ingredientes reales", "heading": "¿De qué está hecho?", "text": "<p>Proteínas, vegetales y suplementos naturales seleccionados.</p>", "button_label": "", "color_scheme": "scheme-2", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 } },
-    "faq": { "type": "wogg-faq", "blocks": { "q1": { "type": "question", "settings": { "question": "¿Cuánta comida debe comer?", "answer": "<p>Entre 2% y 3% de su peso ideal por día, según edad y actividad.</p>" } }, "q2": { "type": "question", "settings": { "question": "¿Cómo hago la transición?", "answer": "<p>Realizá una transición gradual durante varios días y evitá mezclar BARF con balanceado en el mismo plato.</p>" } }, "q3": { "type": "question", "settings": { "question": "¿Cómo se conserva?", "answer": "<p>En freezer hasta 6 meses. Descongelá la ración diaria en la heladera.</p>" } } }, "block_order": ["q1", "q2", "q3"], "settings": { "kicker": "Antes de comenzar", "heading": "Preguntas frecuentes", "text": "<p>Todo lo que necesitás saber sobre alimentación BARF para perros.</p>", "button_label": "", "color_scheme": "scheme-2", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 } },
-    "related": { "type": "related-products", "settings": { "heading": "También les puede gustar", "heading_size": "h1", "products_to_show": 4, "columns_desktop": 4, "columns_mobile": "2", "color_scheme": "scheme-2", "image_ratio": "square", "image_shape": "default", "show_secondary_image": true, "show_vendor": false, "show_rating": true, "padding_top": 48, "padding_bottom": 48 } }
+    "alternative": {
+      "type": "wogg-alternative",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "feature": "Ingredientes naturales sin procesar" } },
+        "f2": { "type": "feature", "settings": { "feature": "Sin conservantes ni aditivos artificiales" } },
+        "f3": { "type": "feature", "settings": { "feature": "Sin subproductos cárnicos" } },
+        "f4": { "type": "feature", "settings": { "feature": "Sin harinas" } },
+        "f5": { "type": "feature", "settings": { "feature": "Alto en proteínas y bajo en carbohidratos" } }
+      },
+      "block_order": ["f1", "f2", "f3", "f4", "f5"],
+      "settings": { "highlight": "alternativa", "our_heading": "Alimento Natural WOGG", "other_heading": "Alimento Balanceado Tradicional", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+    },
+    "faq": {
+      "type": "wogg-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "¿Cuál es la diferencia con el alimento balanceado?", "answer": "<p>Nuestro alimento, también conocido como B.A.R.F. (comida cruda biológicamente apropiada), es una alimentación 100% natural acorde a su condición de carnívoros: fresca, sin conservantes, sin aditivos y libre de granos. A diferencia del balanceado, ofrece una dieta no procesada, rica en proteínas y baja en carbohidratos.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "¿Cuáles son los beneficios de la dieta BARF?", "answer": "<p>Una dieta equilibrada de alimentos crudos ayuda a mantener el peso ideal, mejora el pelaje, aumenta la energía, favorece la digestión, fortalece el sistema inmunológico, reduce el sarro y contribuye a una mejor hidratación y bienestar general.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "¿Quiénes pueden consumir BARF?", "answer": "<p>Los perros pueden consumir BARF desde el destete. Si tu mascota está sana y no presenta patologías previas, puede incorporar nuestro alimento respetando la cantidad adecuada para su edad, peso y etapa de crecimiento.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "¿Qué cantidad de comida BARF tengo que darle?", "answer": "<p>La cantidad depende del peso ideal, edad, actividad, contextura y metabolismo. Como orientación, un perro adulto suele consumir alrededor del 2,5% de su peso ideal por día. Ajustá la porción según su evolución y condición corporal.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "¿Se debe hacer una transición?", "answer": "<p>Sí. Si siempre consumió alimento balanceado, recomendamos sellar levemente el alimento durante 3 o 4 días y disminuir gradualmente la cocción hasta ofrecerlo crudo. No mezcles balanceado y BARF en el mismo plato.</p>" } },
+        "q6": { "type": "question", "settings": { "question": "¿Cómo administrarle el alimento a mi mascota?", "answer": "<p>Descongelá la ración en la heladera durante 24 horas, abrí el envase y serví la cantidad necesaria. Recomendamos retirarla de la heladera unos minutos antes para ofrecerla a una temperatura agradable.</p>" } },
+        "q7": { "type": "question", "settings": { "question": "¿Cómo conservar el alimento?", "answer": "<p>Conservá los menús en el freezer. La ración del día debe descongelarse en la heladera durante 24 horas. Puede mantenerse congelado hasta 6 meses, hasta 3 días refrigerado sin abrir y hasta 48 horas una vez abierto.</p>" } },
+        "q8": { "type": "question", "settings": { "question": "¿Se puede cocinar el alimento?", "answer": "<p>Sí, aunque recomendamos únicamente una cocción leve o sellado en sartén. Una cocción prolongada puede reducir nutrientes esenciales y alterar el equilibrio nutricional del alimento.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
+      "settings": { "kicker": "", "heading": "Preguntas frecuentes", "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>", "button_label": "", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+    },
+    "community": {
+      "type": "wogg-community",
+      "blocks": {
+        "image_1": { "type": "testimonial", "settings": {} },
+        "image_2": { "type": "testimonial", "settings": {} },
+        "image_3": { "type": "testimonial", "settings": {} },
+        "image_4": { "type": "testimonial", "settings": {} },
+        "image_5": { "type": "testimonial", "settings": {} },
+        "image_6": { "type": "testimonial", "settings": {} }
+      },
+      "block_order": ["image_1", "image_2", "image_3", "image_4", "image_5", "image_6"],
+      "settings": { "heading": "Unite a nuestra familia", "show_instagram": true, "instagram_label": "Seguinos en Instagram", "instagram_link": "https://www.instagram.com/wogg.ok/", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+    }
   },
-  "order": ["main", "benefits", "ingredients_grid", "faq", "related"]
+  "order": [
+    "main",
+    "ingredients_grid",
+    "benefits",
+    "alternative",
+    "faq",
+    "community"
+  ]
 }
