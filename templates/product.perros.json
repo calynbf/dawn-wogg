@@ -12,13 +12,48 @@
     "trust_strip": {
       "type": "wogg-product-trust-strip",
       "blocks": {
-        "shipping": { "type": "item", "settings": { "icon": "shipping", "text": "Envío gratis" } },
-        "guarantee": { "type": "item", "settings": { "icon": "guarantee", "text": "Garantía de Satisfacción" } },
-        "refuge": { "type": "item", "settings": { "icon": "refuge", "text": "Ayudás a Refugios Animales" } },
-        "happy": { "type": "item", "settings": { "icon": "happy", "text": "+10.000 peludos felices" } }
+        "shipping": {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "text": "Envío gratis"
+          }
+        },
+        "guarantee": {
+          "type": "item",
+          "settings": {
+            "icon": "guarantee",
+            "text": "Garantía de Satisfacción"
+          }
+        },
+        "refuge": {
+          "type": "item",
+          "settings": {
+            "icon": "refuge",
+            "text": "Ayudás a Refugios Animales"
+          }
+        },
+        "happy": {
+          "type": "item",
+          "settings": {
+            "icon": "happy",
+            "text": "+10.000 peludos felices"
+          }
+        }
       },
-      "block_order": ["shipping", "guarantee", "refuge", "happy"],
-      "settings": { "color_scheme": "scheme-3", "full_width": true, "use_background": true, "padding_top": 16, "padding_bottom": 16 }
+      "block_order": [
+        "shipping",
+        "guarantee",
+        "refuge",
+        "happy"
+      ],
+      "settings": {
+        "color_scheme": "scheme-cc8569e6-adb9-47e4-a628-8d3263f4fa99",
+        "full_width": true,
+        "use_background": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     },
     "main": {
       "type": "main-product",
@@ -379,42 +414,197 @@
     "alternative": {
       "type": "wogg-alternative",
       "blocks": {
-        "f1": { "type": "feature", "settings": { "feature": "Ingredientes naturales sin procesar" } },
-        "f2": { "type": "feature", "settings": { "feature": "Sin conservantes ni aditivos artificiales" } },
-        "f3": { "type": "feature", "settings": { "feature": "Sin subproductos cárnicos" } },
-        "f4": { "type": "feature", "settings": { "feature": "Sin harinas" } },
-        "f5": { "type": "feature", "settings": { "feature": "Alto en proteínas y bajo en carbohidratos" } }
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "feature": "Ingredientes naturales sin procesar"
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "feature": "Sin conservantes ni aditivos artificiales"
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "feature": "Sin subproductos cárnicos"
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "feature": "Sin harinas"
+          }
+        },
+        "f5": {
+          "type": "feature",
+          "settings": {
+            "feature": "Alto en proteínas y bajo en carbohidratos"
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3", "f4", "f5"],
-      "settings": { "highlight": "alternativa", "our_heading": "Alimento Natural WOGG", "other_heading": "Alimento Balanceado Tradicional", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "settings": {
+        "highlight": "alternativa",
+        "our_heading": "Alimento Natural WOGG",
+        "other_heading": "Alimento Balanceado Tradicional",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "faq": {
       "type": "wogg-faq",
       "blocks": {
-        "q1": { "type": "question", "settings": { "question": "¿Cuál es la diferencia con el alimento balanceado?", "answer": "<p>Nuestro alimento, también conocido como B.A.R.F. (comida cruda biológicamente apropiada), es una alimentación 100% natural acorde a su condición de carnívoros: fresca, sin conservantes, sin aditivos y libre de granos. A diferencia del balanceado, ofrece una dieta no procesada, rica en proteínas y baja en carbohidratos.</p>" } },
-        "q2": { "type": "question", "settings": { "question": "¿Cuáles son los beneficios de la dieta BARF?", "answer": "<p>Una dieta equilibrada de alimentos crudos ayuda a mantener el peso ideal, mejora el pelaje, aumenta la energía, favorece la digestión, fortalece el sistema inmunológico, reduce el sarro y contribuye a una mejor hidratación y bienestar general.</p>" } },
-        "q3": { "type": "question", "settings": { "question": "¿Quiénes pueden consumir BARF?", "answer": "<p>Los perros pueden consumir BARF desde el destete. Si tu mascota está sana y no presenta patologías previas, puede incorporar nuestro alimento respetando la cantidad adecuada para su edad, peso y etapa de crecimiento.</p>" } },
-        "q4": { "type": "question", "settings": { "question": "¿Qué cantidad de comida BARF tengo que darle?", "answer": "<p>La cantidad depende del peso ideal, edad, actividad, contextura y metabolismo. Como orientación, un perro adulto suele consumir alrededor del 2,5% de su peso ideal por día. Ajustá la porción según su evolución y condición corporal.</p>" } },
-        "q5": { "type": "question", "settings": { "question": "¿Se debe hacer una transición?", "answer": "<p>Sí. Si siempre consumió alimento balanceado, recomendamos sellar levemente el alimento durante 3 o 4 días y disminuir gradualmente la cocción hasta ofrecerlo crudo. No mezcles balanceado y BARF en el mismo plato.</p>" } },
-        "q6": { "type": "question", "settings": { "question": "¿Cómo administrarle el alimento a mi mascota?", "answer": "<p>Descongelá la ración en la heladera durante 24 horas, abrí el envase y serví la cantidad necesaria. Recomendamos retirarla de la heladera unos minutos antes para ofrecerla a una temperatura agradable.</p>" } },
-        "q7": { "type": "question", "settings": { "question": "¿Cómo conservar el alimento?", "answer": "<p>Conservá los menús en el freezer. La ración del día debe descongelarse en la heladera durante 24 horas. Puede mantenerse congelado hasta 6 meses, hasta 3 días refrigerado sin abrir y hasta 48 horas una vez abierto.</p>" } },
-        "q8": { "type": "question", "settings": { "question": "¿Se puede cocinar el alimento?", "answer": "<p>Sí, aunque recomendamos únicamente una cocción leve o sellado en sartén. Una cocción prolongada puede reducir nutrientes esenciales y alterar el equilibrio nutricional del alimento.</p>" } }
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuál es la diferencia con el alimento balanceado?",
+            "answer": "<p>Nuestro alimento, también conocido como B.A.R.F. (comida cruda biológicamente apropiada), es una alimentación 100% natural acorde a su condición de carnívoros: fresca, sin conservantes, sin aditivos y libre de granos. A diferencia del balanceado, ofrece una dieta no procesada, rica en proteínas y baja en carbohidratos.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuáles son los beneficios de la dieta BARF?",
+            "answer": "<p>Una dieta equilibrada de alimentos crudos ayuda a mantener el peso ideal, mejora el pelaje, aumenta la energía, favorece la digestión, fortalece el sistema inmunológico, reduce el sarro y contribuye a una mejor hidratación y bienestar general.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Quiénes pueden consumir BARF?",
+            "answer": "<p>Los perros pueden consumir BARF desde el destete. Si tu mascota está sana y no presenta patologías previas, puede incorporar nuestro alimento respetando la cantidad adecuada para su edad, peso y etapa de crecimiento.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué cantidad de comida BARF tengo que darle?",
+            "answer": "<p>La cantidad depende del peso ideal, edad, actividad, contextura y metabolismo. Como orientación, un perro adulto suele consumir alrededor del 2,5% de su peso ideal por día. Ajustá la porción según su evolución y condición corporal.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se debe hacer una transición?",
+            "answer": "<p>Sí. Si siempre consumió alimento balanceado, recomendamos sellar levemente el alimento durante 3 o 4 días y disminuir gradualmente la cocción hasta ofrecerlo crudo. No mezcles balanceado y BARF en el mismo plato.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo administrarle el alimento a mi mascota?",
+            "answer": "<p>Descongelá la ración en la heladera durante 24 horas, abrí el envase y serví la cantidad necesaria. Recomendamos retirarla de la heladera unos minutos antes para ofrecerla a una temperatura agradable.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo conservar el alimento?",
+            "answer": "<p>Conservá los menús en el freezer. La ración del día debe descongelarse en la heladera durante 24 horas. Puede mantenerse congelado hasta 6 meses, hasta 3 días refrigerado sin abrir y hasta 48 horas una vez abierto.</p>"
+          }
+        },
+        "q8": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se puede cocinar el alimento?",
+            "answer": "<p>Sí, aunque recomendamos únicamente una cocción leve o sellado en sartén. Una cocción prolongada puede reducir nutrientes esenciales y alterar el equilibrio nutricional del alimento.</p>"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
-      "settings": { "kicker": "", "heading": "Preguntas frecuentes", "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>", "button_label": "", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "settings": {
+        "kicker": "",
+        "heading": "Preguntas frecuentes",
+        "text": "<p>Acá te ofrecemos respuestas a algunas de las preguntas más comunes que puedas tener sobre nuestro alimento BARF.</p>",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "community": {
       "type": "wogg-community",
       "blocks": {
-        "image_1": { "type": "testimonial", "settings": {} },
-        "image_2": { "type": "testimonial", "settings": {} },
-        "image_3": { "type": "testimonial", "settings": {} },
-        "image_4": { "type": "testimonial", "settings": {} },
-        "image_5": { "type": "testimonial", "settings": {} },
-        "image_6": { "type": "testimonial", "settings": {} }
+        "image_1": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_2": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_3": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_4": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_5": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_6": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
+          }
+        }
       },
-      "block_order": ["image_1", "image_2", "image_3", "image_4", "image_5", "image_6"],
-      "settings": { "heading": "Unite a nuestra familia", "show_instagram": true, "instagram_label": "Seguinos en Instagram", "instagram_link": "https://www.instagram.com/wogg.ok/", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6"
+      ],
+      "settings": {
+        "heading": "Unite a nuestra familia",
+        "show_instagram": true,
+        "instagram_label": "Seguinos en Instagram",
+        "instagram_link": "https://www.instagram.com/wogg.ok/",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [

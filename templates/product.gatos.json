@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "trust_strip": {
@@ -14,55 +23,358 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "eyebrow": { "type": "text", "settings": { "text": "MENÚ WOGG PARA GATOS", "text_style": "uppercase" } },
-        "rating": { "type": "rating", "settings": {} },
-        "title": { "type": "title", "settings": {} },
-        "intro": { "type": "text", "settings": { "text": "Alimento natural BARF para gatos, completo, congelado y elaborado con ingredientes frescos.", "text_style": "body" } },
-        "features": { "type": "custom_liquid", "settings": { "custom_liquid": "<ul class='wogg-product-highlights'><li>Alimento congelado, 100% natural</li><li>Sin conservantes artificiales ni harinas</li><li>Con cada compra ayudás a salvar vidas 🐾</li><li>Porciones de 250 gramos</li><li>Envase reciclable</li></ul>" } },
-        "price": { "type": "price", "settings": {} },
-        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
-        "quantity": { "type": "quantity_selector", "settings": {} },
-        "buy": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false } },
-        "ingredients": { "type": "collapsible_tab", "settings": { "heading": "Ingredientes", "icon": "carrot", "content": "<p>55% carne de vaca y/o pollo, 35% huesos carnosos de pollo, 5% vísceras, 5% vegetales y suplementos naturales.</p>" } },
-        "portion": { "type": "collapsible_tab", "settings": { "heading": "Tabla de consumo", "icon": "clipboard", "content": "<p>Un gato adulto consume aproximadamente 3,5% de su peso ideal por día. El resultado es orientativo.</p>" } },
-        "shipping": { "type": "collapsible_tab", "settings": { "heading": "Envío y conservación", "icon": "snowflake", "content": "<p>Conservar en freezer y descongelar la ración diaria en la heladera durante 24 horas.</p>" } }
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "MENÚ WOGG PARA GATOS",
+            "text_style": "uppercase"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "intro": {
+          "type": "text",
+          "settings": {
+            "text": "Alimento natural BARF para gatos, completo, congelado y elaborado con ingredientes frescos.",
+            "text_style": "body"
+          }
+        },
+        "features": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class='wogg-product-highlights'><li>Alimento congelado, 100% natural</li><li>Sin conservantes artificiales ni harinas</li><li>Con cada compra ayudás a salvar vidas 🐾</li><li>Porciones de 250 gramos</li><li>Envase reciclable</li></ul>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "ingredients": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes",
+            "icon": "carrot",
+            "content": "<p>55% carne de vaca y/o pollo, 35% huesos carnosos de pollo, 5% vísceras, 5% vegetales y suplementos naturales.</p>",
+            "page": ""
+          }
+        },
+        "portion": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Tabla de consumo",
+            "icon": "clipboard",
+            "content": "<p>Un gato adulto consume aproximadamente 3,5% de su peso ideal por día. El resultado es orientativo.</p>",
+            "page": ""
+          }
+        },
+        "shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Envío y conservación",
+            "icon": "snowflake",
+            "content": "<p>Conservar en freezer y descongelar la ración diaria en la heladera durante 24 horas.</p>",
+            "page": ""
+          }
+        }
       },
-      "block_order": ["eyebrow", "rating", "title", "intro", "features", "price", "variant_picker", "quantity", "buy", "ingredients", "portion", "shipping"],
-      "settings": { "enable_sticky_info": true, "color_scheme": "scheme-2", "media_size": "large", "constrain_to_viewport": true, "media_fit": "contain", "gallery_layout": "thumbnail_slider", "mobile_thumbnails": "show", "media_position": "left", "image_zoom": "lightbox", "hide_variants": true, "enable_video_looping": false, "padding_top": 36, "padding_bottom": 40 }
+      "block_order": [
+        "eyebrow",
+        "rating",
+        "title",
+        "intro",
+        "features",
+        "price",
+        "variant_picker",
+        "quantity",
+        "buy",
+        "ingredients",
+        "portion",
+        "shipping"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-2",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
     },
     "ingredients_grid": {
       "type": "wogg-ingredients",
       "blocks": {
-        "i1": { "type": "ingredient", "settings": { "heading": "Carne vacuna", "text": "" } },
-        "i2": { "type": "ingredient", "settings": { "heading": "Hígado vacuno", "text": "" } },
-        "i3": { "type": "ingredient", "settings": { "heading": "Vísceras vacunas", "text": "" } },
-        "i4": { "type": "ingredient", "settings": { "heading": "Carne de pollo", "text": "" } },
-        "i5": { "type": "ingredient", "settings": { "heading": "Hígado de pollo", "text": "" } },
-        "i6": { "type": "ingredient", "settings": { "heading": "Carcaza de pollo", "text": "" } },
-        "i7": { "type": "ingredient", "settings": { "heading": "Zanahoria", "text": "" } },
-        "i8": { "type": "ingredient", "settings": { "heading": "Zapallito verde", "text": "" } },
-        "i9": { "type": "ingredient", "settings": { "heading": "Manzana", "text": "" } },
-        "i10": { "type": "ingredient", "settings": { "heading": "Semillas y Omega 3", "text": "" } }
+        "i1": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-22.png",
+            "heading": "Carne vacuna",
+            "text": ""
+          }
+        },
+        "i2": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-23.png",
+            "heading": "Hígado vacuno",
+            "text": ""
+          }
+        },
+        "i3": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-24.png",
+            "heading": "Vísceras vacunas",
+            "text": ""
+          }
+        },
+        "i4": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-9.png",
+            "heading": "Carne de pollo",
+            "text": ""
+          }
+        },
+        "i5": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-25.png",
+            "heading": "Hígado de pollo",
+            "text": ""
+          }
+        },
+        "i6": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-26.png",
+            "heading": "Carcaza de pollo",
+            "text": ""
+          }
+        },
+        "i7": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-16.png",
+            "heading": "Zanahoria",
+            "text": ""
+          }
+        },
+        "i8": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Frame-16.jpg",
+            "heading": "Zapallito verde",
+            "text": ""
+          }
+        },
+        "i9": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-18.png",
+            "heading": "Manzana",
+            "text": ""
+          }
+        },
+        "i10": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-10.png",
+            "heading": "Semillas de Lino",
+            "text": ""
+          }
+        },
+        "ingredient_BaJWdn": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-27.png",
+            "heading": "Semillas de Zapallo",
+            "text": "Proteína de alta calidad."
+          }
+        },
+        "ingredient_XVHbd6": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-12.png",
+            "heading": "Cúrcuma",
+            "text": "Proteína de alta calidad."
+          }
+        }
       },
-      "block_order": ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i9", "i10"],
-      "settings": { "kicker": "Ingredientes reales", "heading": "¿De qué estamos hechos?", "text": "", "button_label": "", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8",
+        "i9",
+        "i10",
+        "ingredient_BaJWdn",
+        "ingredient_XVHbd6"
+      ],
+      "settings": {
+        "kicker": "Ingredientes reales",
+        "heading": "¿De qué estamos hechos?",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "benefits": {
       "type": "wogg-value-grid",
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon_name": "health", "heading": "Mejora la salud de tu mascota", "text": "" } },
-        "b2": { "type": "benefit", "settings": { "icon_name": "obesity", "heading": "Previene la obesidad", "text": "" } },
-        "b3": { "type": "benefit", "settings": { "icon_name": "wellbeing", "heading": "Mejora el bienestar general", "text": "" } },
-        "b4": { "type": "benefit", "settings": { "icon_name": "energy", "heading": "Aumenta la energía y vitalidad", "text": "" } },
-        "b5": { "type": "benefit", "settings": { "icon_name": "ideal-weight", "heading": "Ayuda a mantener un peso ideal", "text": "" } },
-        "b6": { "type": "benefit", "settings": { "icon_name": "odor", "heading": "Reducción del olor", "text": "" } },
-        "b7": { "type": "benefit", "settings": { "icon_name": "dental", "heading": "Salud dental y previene el sarro", "text": "" } },
-        "b8": { "type": "benefit", "settings": { "icon_name": "digestion", "heading": "Mejora la digestión", "text": "" } },
-        "b9": { "type": "benefit", "settings": { "icon_name": "hydration", "heading": "Mejora el nivel de hidratación", "text": "" } },
-        "b10": { "type": "benefit", "settings": { "icon_name": "coat", "heading": "Piel más sana y pelo más brillante", "text": "" } }
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "health",
+            "icon": "⚡",
+            "heading": "Mejora la salud de tu mascota",
+            "text": ""
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "obesity",
+            "icon": "⚡",
+            "heading": "Previene la obesidad",
+            "text": ""
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "wellbeing",
+            "icon": "⚡",
+            "heading": "Mejora el bienestar general",
+            "text": ""
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "energy",
+            "icon": "⚡",
+            "heading": "Aumenta la energía y vitalidad",
+            "text": ""
+          }
+        },
+        "b5": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "ideal-weight",
+            "icon": "⚡",
+            "heading": "Ayuda a mantener un peso ideal",
+            "text": ""
+          }
+        },
+        "b6": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "odor",
+            "icon": "⚡",
+            "heading": "Reducción del olor",
+            "text": ""
+          }
+        },
+        "b7": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "dental",
+            "icon": "⚡",
+            "heading": "Salud dental y previene el sarro",
+            "text": ""
+          }
+        },
+        "b8": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "digestion",
+            "icon": "⚡",
+            "heading": "Mejora la digestión",
+            "text": ""
+          }
+        },
+        "b9": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "hydration",
+            "icon": "⚡",
+            "heading": "Mejora el nivel de hidratación",
+            "text": ""
+          }
+        },
+        "b10": {
+          "type": "benefit",
+          "settings": {
+            "icon_name": "coat",
+            "icon": "⚡",
+            "heading": "Piel más sana y pelo más brillante",
+            "text": ""
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
-      "settings": { "layout": "cards", "kicker": "", "heading": "Beneficios", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable. Experimentá resultados positivos en tan solo unas semanas.</p>", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
+      "settings": {
+        "layout": "cards",
+        "kicker": "",
+        "heading": "Beneficios",
+        "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable. Experimentá resultados positivos en tan solo unas semanas.</p>",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "use_background": false,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "alternative": {
       "type": "wogg-alternative",
@@ -105,5 +417,13 @@
       "settings": { "heading": "Unite a nuestra familia", "show_instagram": true, "instagram_label": "Seguinos en Instagram", "instagram_link": "https://www.instagram.com/wogg.ok/", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
     }
   },
-  "order": ["trust_strip", "main", "ingredients_grid", "benefits", "alternative", "faq", "community"]
+  "order": [
+    "trust_strip",
+    "main",
+    "ingredients_grid",
+    "benefits",
+    "alternative",
+    "faq",
+    "community"
+  ]
 }
