@@ -125,6 +125,7 @@
         "value_1": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Peso Corporal Ideal",
             "text": "Vitalidad para disfrutar cada día."
@@ -133,6 +134,7 @@
         "value_2": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Pelaje Más Sano y Brillante",
             "text": "Vitalidad para disfrutar cada día."
@@ -141,6 +143,7 @@
         "value_3": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Más Energía",
             "text": "Vitalidad para disfrutar cada día."
@@ -149,6 +152,7 @@
         "value_4": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Mejores Digestiones",
             "text": "Vitalidad para disfrutar cada día."
@@ -157,6 +161,7 @@
         "value_5": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Reducción de Alergias",
             "text": "Vitalidad para disfrutar cada día."
@@ -165,6 +170,7 @@
         "value_6": {
           "type": "benefit",
           "settings": {
+            "icon_name": "health",
             "icon": "⚡",
             "heading": "Mejor Salud Dental",
             "text": "Vitalidad para disfrutar cada día."
@@ -180,6 +186,7 @@
         "value_6"
       ],
       "settings": {
+        "layout": "classic",
         "kicker": "Alimentación con propósito",
         "heading": "La forma en que tus peludos deberían comer.",
         "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable.<br/>Experimentá resultados positivos en tan solo unas semanas.</p>",
@@ -190,51 +197,119 @@
         "padding_bottom": 64
       }
     },
-    "ingredients": {
+    "wogg_ingredients_CJ6nYK": {
       "type": "wogg-ingredients",
       "blocks": {
-        "ingredient_jN3XHG": {
+        "ingredient_YPKxGV": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify://shop_images/image-22.png",
             "heading": "Carne vacuna",
-            "text": "Proteína de alta calidad."
+            "text": ""
           }
         },
-        "ingredient_1": {
+        "ingredient_8gmHNx": {
           "type": "ingredient",
           "settings": {
-            "heading": "Carne vacuna",
-            "text": "Proteína de alta calidad."
+            "image": "shopify://shop_images/image-23.png",
+            "heading": "Hígado vacuno",
+            "text": ""
           }
         },
-        "ingredient_2": {
+        "ingredient_FtfG3P": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify://shop_images/image-24.png",
+            "heading": "Vísceras vacunas",
+            "text": ""
+          }
+        },
+        "ingredient_Lf79zR": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-9.png",
             "heading": "Carne de pollo",
-            "text": "Proteína magra y nutritiva."
+            "text": ""
           }
         },
-        "ingredient_3": {
+        "ingredient_EdMgwk": {
           "type": "ingredient",
           "settings": {
-            "heading": "Vegetales",
-            "text": "Fibra y nutrientes naturales."
+            "image": "shopify://shop_images/image-25.png",
+            "heading": "Hígado de pollo",
+            "text": ""
           }
         },
-        "ingredient_4": {
+        "ingredient_FKajWP": {
           "type": "ingredient",
           "settings": {
-            "heading": "Semillas y Omega 3",
-            "text": "Grasas esenciales para su bienestar."
+            "image": "shopify://shop_images/image-26.png",
+            "heading": "Carcaza de pollo",
+            "text": ""
+          }
+        },
+        "ingredient_HXmXNT": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-16.png",
+            "heading": "Zanahoria",
+            "text": ""
+          }
+        },
+        "ingredient_EDJHjQ": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Frame-16.jpg",
+            "heading": "Zapallito verde",
+            "text": ""
+          }
+        },
+        "ingredient_Q8ei4a": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-18.png",
+            "heading": "Manzana",
+            "text": ""
+          }
+        },
+        "ingredient_Epd7BU": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-10.png",
+            "heading": "Semillas de Lino",
+            "text": ""
+          }
+        },
+        "ingredient_7TckBp": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/image-27.png",
+            "heading": "Semillas de Zapallo",
+            "text": "Proteína de alta calidad."
+          }
+        },
+        "ingredient_xzUWqk": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle-12.png",
+            "heading": "Cúrcuma",
+            "text": "Proteína de alta calidad."
           }
         }
       },
       "block_order": [
-        "ingredient_jN3XHG",
-        "ingredient_1",
-        "ingredient_2",
-        "ingredient_3",
-        "ingredient_4"
+        "ingredient_YPKxGV",
+        "ingredient_8gmHNx",
+        "ingredient_FtfG3P",
+        "ingredient_Lf79zR",
+        "ingredient_EdMgwk",
+        "ingredient_FKajWP",
+        "ingredient_HXmXNT",
+        "ingredient_EDJHjQ",
+        "ingredient_Q8ei4a",
+        "ingredient_Epd7BU",
+        "ingredient_7TckBp",
+        "ingredient_xzUWqk"
       ],
       "settings": {
         "kicker": "Ingredientes reales",
@@ -242,7 +317,7 @@
         "text": "<p>Proteínas, vegetales y semillas seleccionadas para una nutrición completa.</p>",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "full_width": false,
         "use_background": false,
         "padding_top": 64,
@@ -463,6 +538,9 @@
       ],
       "settings": {
         "heading": "Unite a nuestra familia",
+        "show_instagram": true,
+        "instagram_label": "Seguinos en Instagram",
+        "instagram_link": "",
         "color_scheme": "",
         "full_width": false,
         "use_background": false,
@@ -509,7 +587,7 @@
     "wogg_benefits",
     "wogg_pets",
     "value_grid",
-    "ingredients",
+    "wogg_ingredients_CJ6nYK",
     "purpose",
     "steps",
     "faq",
