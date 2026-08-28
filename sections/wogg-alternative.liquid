@@ -1,0 +1,47 @@
+{{ 'wogg-alternative.css' | asset_url | stylesheet_tag }}
+{% render 'wogg-section-settings', section: section %}
+<div class="wogg-base-section color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} wogg-base-section--full{% endif %}{% unless section.settings.use_background %} wogg-base-section--transparent{% endunless %}">
+  <section class="wogg-alternative">
+    <div class="page-width">
+      <h2 class="wogg-alternative__title">La mejor <span>{{ section.settings.highlight | escape }}</span> al balanceado</h2>
+      <div class="wogg-alternative__products">
+        <div aria-hidden="true"></div>
+        <article class="wogg-alternative__product">
+          <div class="wogg-alternative__media">
+            {% if section.settings.our_image != blank %}
+              {{ section.settings.our_image | image_url: width: 900 | image_tag: widths: '360,540,720,900', sizes: '(min-width: 750px) 32vw, 50vw', loading: 'lazy' }}
+            {% else %}
+              <img src="https://woggbarf.com.ar/wp-content/uploads/2025/08/image-8.png" width="786" height="770" loading="lazy" alt="Alimento Natural WOGG">
+            {% endif %}
+          </div>
+          <h3>{{ section.settings.our_heading | escape }}</h3>
+        </article>
+        <article class="wogg-alternative__product">
+          <div class="wogg-alternative__media">
+            {% if section.settings.other_image != blank %}
+              {{ section.settings.other_image | image_url: width: 900 | image_tag: widths: '360,540,720,900', sizes: '(min-width: 750px) 32vw, 50vw', loading: 'lazy' }}
+            {% else %}
+              <img src="https://woggbarf.com.ar/wp-content/uploads/2025/08/eb71c013f57fa43c98aa1bea4175148f53f6e629.png" width="786" height="770" loading="lazy" alt="Alimento Balanceado Tradicional">
+            {% endif %}
+          </div>
+          <h3>{{ section.settings.other_heading | escape }}</h3>
+        </article>
+      </div>
+      <div class="wogg-alternative__table" role="table" aria-label="Comparación de alimentos">
+        <div class="wogg-alternative__row wogg-alternative__row--head" role="row">
+          <strong role="columnheader">Características</strong><span role="columnheader">{{ section.settings.our_heading | escape }}</span><span role="columnheader">{{ section.settings.other_heading | escape }}</span>
+        </div>
+        {% for block in section.blocks %}
+          <div class="wogg-alternative__row" role="row" {{ block.shopify_attributes }}>
+            <span role="cell">{{ block.settings.feature | escape }}</span>
+            <span class="wogg-alternative__status wogg-alternative__status--yes" role="cell" aria-label="Sí">{% render 'wogg-comparison-check' %}</span>
+            <span class="wogg-alternative__status wogg-alternative__status--no" role="cell" aria-label="No">{% render 'wogg-comparison-cross' %}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{"name":"WOGG - Mejor alternativa","tag":"section","class":"section","max_blocks":8,"settings":[{"type":"text","id":"highlight","label":"Palabra resaltada","default":"alternativa"},{"type":"image_picker","id":"our_image","label":"Imagen WOGG"},{"type":"text","id":"our_heading","label":"Título WOGG","default":"Alimento Natural WOGG"},{"type":"image_picker","id":"other_image","label":"Imagen alimento balanceado"},{"type":"text","id":"other_heading","label":"Título alimento balanceado","default":"Alimento Balanceado Tradicional"},{"type":"header","content":"Configuración de sección"},{"type":"color_scheme","id":"color_scheme","label":"Esquema de color","default":"scheme-1"},{"type":"checkbox","id":"full_width","label":"Ancho completo","default":false},{"type":"checkbox","id":"use_background","label":"Mostrar fondo del esquema","default":false},{"type":"range","id":"padding_top","min":0,"max":100,"step":4,"unit":"px","label":"Margen superior","default":64},{"type":"range","id":"padding_bottom","min":0,"max":100,"step":4,"unit":"px","label":"Margen inferior","default":64}],"blocks":[{"type":"feature","name":"Característica","settings":[{"type":"text","id":"feature","label":"Texto","default":"Ingredientes naturales sin procesar"}]}],"presets":[{"name":"WOGG - Mejor alternativa","blocks":[{"type":"feature","settings":{"feature":"Ingredientes naturales sin procesar"}},{"type":"feature","settings":{"feature":"Sin conservantes ni aditivos artificiales"}},{"type":"feature","settings":{"feature":"Sin subproductos cárnicos"}},{"type":"feature","settings":{"feature":"Sin harinas"}},{"type":"feature","settings":{"feature":"Alto en proteínas y bajo en carbohidratos"}}]}]}
+{% endschema %}

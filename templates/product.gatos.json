@@ -52,7 +52,19 @@
       },
       "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
       "settings": { "layout": "cards", "kicker": "", "heading": "Beneficios", "text": "<p>Una dieta natural de alta calidad fomenta una vida larga, feliz y saludable. Experimentá resultados positivos en tan solo unas semanas.</p>", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
+    },
+    "alternative": {
+      "type": "wogg-alternative",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "feature": "Ingredientes naturales sin procesar" } },
+        "f2": { "type": "feature", "settings": { "feature": "Sin conservantes ni aditivos artificiales" } },
+        "f3": { "type": "feature", "settings": { "feature": "Sin subproductos cárnicos" } },
+        "f4": { "type": "feature", "settings": { "feature": "Sin harinas" } },
+        "f5": { "type": "feature", "settings": { "feature": "Alto en proteínas y bajo en carbohidratos" } }
+      },
+      "block_order": ["f1", "f2", "f3", "f4", "f5"],
+      "settings": { "highlight": "alternativa", "our_heading": "Alimento Natural WOGG", "other_heading": "Alimento Balanceado Tradicional", "color_scheme": "scheme-1", "full_width": false, "use_background": false, "padding_top": 64, "padding_bottom": 64 }
     }
   },
-  "order": ["main", "ingredients_grid", "benefits"]
+  "order": ["main", "ingredients_grid", "benefits", "alternative"]
 }
